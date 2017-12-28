@@ -1,0 +1,9 @@
+# Ignore the Emacs temporary files
+*~
+#~
+
+# Ignore all packages installed using NPM
+node_modules/
+
+# Ignore the compile web pages
+public/

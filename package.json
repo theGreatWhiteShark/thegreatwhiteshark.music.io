@@ -1,0 +1,19 @@
+{
+  "name": "osprey",
+  "version": "1.0.0",
+  "description": "![Logo](https://github.com/tomanistor/osprey/blob/master/images/osprey-logo.png)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
