@@ -1,0 +1,18 @@
+.post p a {
+  color: #0366d6;
+  text-decoration: unset;
+}
+
+.post p a:hover {
+  text-decoration: underline;
+}
+
+.content .post-header h1 {
+  font-size: 5rem!important;
+  text-align: center;
+}
+
+.content .post-header h2 {
+  font-size: 3rem!important;
+  text-align: center;
+}

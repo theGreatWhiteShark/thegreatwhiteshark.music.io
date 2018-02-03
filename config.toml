@@ -1,31 +1,63 @@
-baseURL = "https://thegreatwhiteshark.github.io/"
-# baseURL = "/home/phil/git/thegreatwhiteshark.github.io/public"
+baseurl = "https://thegreatwhiteshark.github.io"
+# baseurl = "https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io"
 languageCode = "en-us"
-title = "theGreatWhiteShark blog"
+disqusshortname = "ladida"
+paginate = 7
+pluralizelisttitles = false
 theme = "casper"
-
-[Params]
-	tagline = "theGreatWhiteShark blog"
-	author = "Philipp Müller"
-	description = "A collection of all the my interests"
-	github = "theGreatWhiteShark"
-	logoBig = "/images/logo-big.jpg"
-	logoSmall = "/images/logo-small.jpg" 
-	email = "thetruephil@googlemail.com"
-	hightlightJs = true
-	credit = true
-	customCSS = false
+title = "theGreatWhiteShark"
 
 [[menu.main]]
-	name = "About"
-	url = "/#about"
-	weight = 1
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 200
+
 [[menu.main]]
-	name = "Blogs"
-	url = "/#blogs"
-	weight = 2
+identifier = "linuxaudio"
+name = "Linux audio"
+pre = "<h3>Topics</h3>"
+url = "/linux-audio"
+weight = 115
 [[menu.main]]
-	name = "Projects"
-	url = "/#projects"
-	weight = 3
-	
+identifier = "musicprocessing"
+name = "Music processing"
+url = "/music-processing"
+weight = 114
+[[menu.main]]
+identifier = "recording"
+name = "Recording"
+url = "/recording"
+weight = 113
+
+[[menu.main]]
+name = "Github repos"
+pre = "<h3>Follow me</h3>"
+url = "https://github.com/theGreatWhiteShark"
+weight = 100
+[[menu.main]]
+identifier = "blog"
+name = "Blogs"
+url = "https://thegreatwhiteshark.github.io/"
+weight = 90
+[[menu.main]]
+identifier = "about"
+name = "About me"
+url = "/about"
+weight = 80
+
+[params]
+author = "Philipp Müller"
+authorwebsite = "https://thegreatwhiteshark.github.io/"
+cover = "images/non-banner.png"
+email = "thetruephil@googlemail.com"
+description = "On a journey to find the perfect sound"
+githubName = "theGreatWhiteShark"
+hideHUGOSupport = false
+highlightJs = true
+[permalinks]
+post = "/:slug/"
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"

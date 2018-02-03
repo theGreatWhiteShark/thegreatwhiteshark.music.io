@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448"
+   height="792.29999"
+   viewBox="0 0 744.09449 792.29999"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="Linux-sound-server-sketch.svg"
+   inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+   inkscape:export-xdpi="109.00592"
+   inkscape:export-ydpi="109.00592">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4293"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4566"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4568"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4290"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4566-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4568-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4293-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4566-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4568-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4293-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4566-3-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4568-6-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-0-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4293-6-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="16"
+     inkscape:cx="680.33532"
+     inkscape:cy="778.82073"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="679"
+     inkscape:window-height="729"
+     inkscape:window-x="683"
+     inkscape:window-y="1938"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-260.06231)">
+    <rect
+       style="fill:#cfcfcf;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4182"
+       width="742.6106"
+       height="192.84959"
+       x="0.74974483"
+       y="858.75513"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <rect
+       style="fill:#939393;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3336"
+       width="239.68985"
+       height="131.42337"
+       x="211.38422"
+       y="887.71826"
+       ry="43.134151"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       rx="43.134151" />
+    <text
+       xml:space="preserve"
+       style="font-size:66.58776093px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="335.49365"
+       y="924.65796"
+       id="text4138"
+       sodipodi:linespacing="2%"
+       transform="scale(0.98195465,1.018377)"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"><tspan
+         sodipodi:role="line"
+         x="341.8566"
+         y="924.65796"
+         id="tspan4142"
+         style="font-size:39.97335815px;text-align:center;text-anchor:middle">sound </tspan><tspan
+         sodipodi:role="line"
+         x="335.49365"
+         y="925.4574"
+         id="tspan4152"
+         dy="49.187386"
+         style="font-size:39.97335815px;text-align:center;text-anchor:middle">card</tspan></text>
+    <rect
+       style="fill:#939393;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3336-3"
+       width="239.68985"
+       height="131.42337"
+       x="477.14124"
+       y="887.71826"
+       ry="43.134151"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       rx="43.134151" />
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="605.65613"
+       y="922.67419"
+       id="text4138-6"
+       sodipodi:linespacing="2%"
+       transform="scale(0.98195465,1.018377)"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"><tspan
+         sodipodi:role="line"
+         x="612.0191"
+         y="922.67419"
+         id="tspan4142-7"
+         style="font-size:39.97335815px;text-align:center;text-anchor:middle">sound </tspan><tspan
+         sodipodi:role="line"
+         x="605.65613"
+         y="923.47363"
+         id="tspan4152-5"
+         dy="49.187386"
+         style="font-size:39.97335815px;text-align:center;text-anchor:middle">card</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="13.563106"
+       y="968.8576"
+       id="text4178"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4180"
+         x="13.563106"
+         y="968.8576">hardware</tspan></text>
+    <rect
+       style="fill:#ff8b8b;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4182-3"
+       width="742.6106"
+       height="192.84959"
+       x="0.74974483"
+       y="557.39563"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="10.707864"
+       y="664.06073"
+       id="text4203"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4205"
+         x="10.707864"
+         y="664.06073">Linux kernel</tspan></text>
+    <rect
+       style="fill:#c92525;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3336-5"
+       width="239.68985"
+       height="131.42337"
+       x="343.1282"
+       y="582.33746"
+       ry="43.134151"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       rx="43.134151" />
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="416.15192"
+       y="656.92261"
+       id="text4226"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4228"
+         x="416.15192"
+         y="656.92261">ALSA</tspan></text>
+    <rect
+       style="fill:#91a1fc;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4182-3-6"
+       width="742.6106"
+       height="192.84959"
+       x="0.74974483"
+       y="260.86435"
+       ry="0"
+       rx="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="14.255391"
+       y="352.2262"
+       id="text4245"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4247"
+         x="14.255391"
+         y="352.2262"
+         dy="-7.664897">sound</tspan><tspan
+         sodipodi:role="line"
+         x="14.255391"
+         y="353.02567"
+         id="tspan4270"
+         dy="39.973358">server</tspan></text>
+    <rect
+       style="fill:#3b45bc;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3336-5-2"
+       width="239.68985"
+       height="131.42337"
+       x="477.13336"
+       y="291.63467"
+       ry="43.134151"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       rx="43.134151" />
+    <rect
+       style="fill:#3b45bc;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3336-5-9"
+       width="239.68985"
+       height="131.42337"
+       x="211.44713"
+       y="293.06317"
+       ry="43.134151"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       rx="43.134151" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="338.57144"
+       y="305.21936"
+       id="text4272"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"><tspan
+         sodipodi:role="line"
+         id="tspan4274"
+         x="338.57144"
+         y="305.21936" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="274.57922"
+       y="368.98019"
+       id="text4276"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4278"
+         x="274.57922"
+         y="368.98019">JACK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:39.97335815px;font-style:normal;font-weight:normal;line-height:1.99999996%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="499.69321"
+       y="367.9707"
+       id="text4280"
+       sodipodi:linespacing="2%"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592"
+       transform="scale(0.99937344,1.000627)"><tspan
+         sodipodi:role="line"
+         id="tspan4282"
+         x="499.69321"
+         y="367.9707">Pulseaudio</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker4566);marker-end:url(#Arrow1Lend)"
+       d="m 393.4916,425.66509 0,155.74385"
+       id="path5120"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker4566-1);marker-end:url(#Arrow1Lend-7)"
+       d="m 531.31328,424.79012 0,155.74385"
+       id="path5120-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.04299593px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker4566-3);marker-end:url(#Arrow1Lend-0)"
+       d="m 397.48643,715.93804 0,169.42446"
+       id="path5120-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.04299593px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker4566-3-6);marker-end:url(#Arrow1Lend-0-8)"
+       d="m 526.31974,715.93804 0,169.42446"
+       id="path5120-2-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/phmu/ownCloud/blog/test.png"
+       inkscape:export-xdpi="109.00592"
+       inkscape:export-ydpi="109.00592" />
+  </g>
+</svg>
