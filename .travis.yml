@@ -1,0 +1,39 @@
+language: go
+
+go:
+  - "1.7.1"
+
+sudo: enabled
+
+env:
+  global:
+    - SSH_KEY="travis_key"
+    - GIT_NAME="theGreatWhiteShark"
+    - GIT_EMAIL="thetruephil@googlemail.com"
+    - SOURCE_DIR="public"
+    - DEPLOY_BRANCH="master"
+    - TARGET_BRANCH="gh-pages"
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_33e8b8578818_key -iv $encrypted_33e8b8578818_iv -in travis_key.enc -out travis_key -d
+- git clone --branch v2 https://github.com/go-yaml/yaml $GOPATH/src/gopkg.in/yaml.v2
+- wget https://github.com/gohugoio/hugo/releases/download/v0.32.2/hugo_0.32.2_Linux-64bit.deb
+- sudo dpkg -i hugo_0.32.2_Linux-64bit.deb
+- rm hugo_0.32.2_Linux-64bit.deb
+
+install: true
+
+script:
+  - git submodule update --init --remote --recursive
+  - hugo
+
+after_success:
+  - ./_deploy_script.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  target_branch: gh-pages
+  on:
+    branch: master
+ 
