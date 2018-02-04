@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emulation on theGreatWhiteShark</title>
-    <link>https://thegreatwhiteshark.github.io/tags/emulation/</link>
+    <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emulation/</link>
     <description>Recent content in Emulation on theGreatWhiteShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Nov 2017 18:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://thegreatwhiteshark.github.io/tags/emulation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emulation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using ZynAddSubFx as sound synthesizer in TuxGuitar</title>
-      <link>https://thegreatwhiteshark.github.io/linux-audio/zynaddsubfx-with-tuxguitar/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/</link>
       <pubDate>Sun, 26 Nov 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/linux-audio/zynaddsubfx-with-tuxguitar/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/</guid>
       <description>Although not as good as the original GuitarPro, I really like TuxGuitar. After all, it is the only usable software to produce guitar tabs and scores in Linux systems I&amp;rsquo;m aware of. But of all its shortcomings the issues I had with its sound system were the worst: The sound generation is broken quite frequently and the whole program remains silent. In this short post I&amp;rsquo;ll explain to you how to replace the internal sound generator of TuxGuitar with ZynAddSubFX for a more stable and reliable setup.</description>
     </item>
     

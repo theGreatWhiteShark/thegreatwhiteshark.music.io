@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on theGreatWhiteShark</title>
-    <link>https://thegreatwhiteshark.github.io/tags/</link>
+    <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/</link>
     <description>Recent content in Tags on theGreatWhiteShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Nov 2017 18:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://thegreatwhiteshark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emulation</title>
-      <link>https://thegreatwhiteshark.github.io/tags/emulation/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emulation/</link>
       <pubDate>Sun, 26 Nov 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/emulation/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://thegreatwhiteshark.github.io/tags/linux/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/linux/</link>
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/linux/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Music Processing</title>
-      <link>https://thegreatwhiteshark.github.io/tags/music-processing/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/music-processing/</link>
       <pubDate>Sun, 10 Dec 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/music-processing/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/music-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Non</title>
-      <link>https://thegreatwhiteshark.github.io/tags/non/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/non/</link>
       <pubDate>Sun, 06 Aug 2017 18:00:00 +0200</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/non/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/non/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recording</title>
-      <link>https://thegreatwhiteshark.github.io/tags/recording/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/recording/</link>
       <pubDate>Thu, 10 Aug 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/recording/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/recording/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spectra</title>
-      <link>https://thegreatwhiteshark.github.io/tags/spectra/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/spectra/</link>
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/tags/spectra/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/spectra/</guid>
       <description></description>
     </item>
     

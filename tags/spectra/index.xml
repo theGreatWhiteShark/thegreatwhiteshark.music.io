@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spectra on theGreatWhiteShark</title>
-    <link>https://thegreatwhiteshark.github.io/tags/spectra/</link>
+    <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/spectra/</link>
     <description>Recent content in Spectra on theGreatWhiteShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Dec 2017 18:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://thegreatwhiteshark.github.io/tags/spectra/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/spectra/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spectral analysis</title>
-      <link>https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/</link>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/</link>
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
-      <guid>https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/</guid>
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/</guid>
       <description>A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Audacity already can handle it. So let&amp;rsquo;s use it with Non Timeline or a general JACK-based environment too.
 In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them. I will not write about the Fourier transform and spectra in general.</description>
     </item>
