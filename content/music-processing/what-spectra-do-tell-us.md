@@ -74,7 +74,7 @@ pre-amp of the external sound card for test 3).
 First, let's have a look on what the microphone is doing with our
 signal. 
 
-![amp+sm58](/static/images/posts/2017/what-spectra-do-tell-us/amp-sm58-average.png)
+![amp+sm58](images/posts/2017/what-spectra-do-tell-us/amp-sm58-average.png)
 ![amp+shure](/static/images/posts/2017/what-spectra-do-tell-us/amp-tm80-average.png)
 
 (The TM-80 channels have the wrong label *Shure* in them, sorry).
@@ -91,7 +91,7 @@ more round and warm sound.
 
 ### Impact of the speaker
 
-![line-out](/static/images/posts/2017/what-spectra-do-tell-us/line-out-average.png)
+![line-out](/images/posts/2017/what-spectra-do-tell-us/line-out-average.png)
 ![line-out+speaker+shure](/static/images/posts/2017/what-spectra-do-tell-us/line-out-tm80-average.png)
 
 In the two figures above you can see spectrum of the raw line-out
