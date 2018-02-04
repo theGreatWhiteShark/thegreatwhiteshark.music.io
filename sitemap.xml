@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/di-or-not-di/</loc>
+    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/</loc>
+    <lastmod>2018-01-29T11:58:25+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/music-processing/</loc>
     <lastmod>2018-01-29T11:58:25+02:00</lastmod>
   </url>
@@ -61,10 +71,6 @@
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/</loc>
     <lastmod>2017-12-03T18:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -88,14 +94,20 @@
   </url>
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/</loc>
+    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/recording/</loc>
-    <lastmod>2017-08-10T18:00:00+01:00</lastmod>
+    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/spectra/</loc>
-    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -107,7 +119,7 @@
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/</loc>
-    <lastmod>2018-01-29T11:58:25+02:00</lastmod>
+    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

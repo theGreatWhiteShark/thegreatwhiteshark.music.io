@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recording on theGreatWhiteShark</title>
+    <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/</link>
+    <description>Recent content in Recording on theGreatWhiteShark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jan 2018 20:02:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recording using DI-Boxes</title>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/di-or-not-di/</link>
+      <pubDate>Mon, 29 Jan 2018 20:02:00 +0100</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/di-or-not-di/</guid>
+      <description> Work in progress&amp;hellip;
+Benefit Are their any losses?  Split signal in DI + send use DI signal as amp input and record send using the same configuration  </description>
+    </item>
+    
+  </channel>
+</rss>
