@@ -26,4 +26,3 @@ script:
 - hugo
 after_success:
 - "./_deploy_script.sh"
-deploy: true
