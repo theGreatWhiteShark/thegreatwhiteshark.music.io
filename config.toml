@@ -1,5 +1,5 @@
-baseurl = "https://thegreatwhiteshark.github.io"
-# baseurl = "https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io"
+# baseurl = "https://thegreatwhiteshark.github.io"
+baseurl = "https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io"
 languageCode = "en-us"
 disqusshortname = "ladida"
 paginate = 7
