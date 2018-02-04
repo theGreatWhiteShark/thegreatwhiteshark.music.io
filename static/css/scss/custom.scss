@@ -3,6 +3,9 @@ $link-color: #0366d6;
 
 // Highlight the links in the posts using a different color.
 .post {
+  h1 {
+    font-size: 4.5rem;
+  }
   p {
     a {
       color: $link-color;
@@ -16,11 +19,13 @@ $link-color: #0366d6;
 
 .content .post-header {
   h1 {
-    font-size: 5rem !important;
+    font-size: 6rem !important;
     text-align: center;
+    color: #000;
   }
   h2 {
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
     text-align: center;
+    color: #333;
   }
 }

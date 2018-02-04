@@ -1,3 +1,7 @@
+.post h1 {
+  font-size: 4.5rem;
+}
+
 .post p a {
   color: #0366d6;
   text-decoration: unset;
@@ -8,11 +12,13 @@
 }
 
 .content .post-header h1 {
-  font-size: 5rem!important;
+  font-size: 6rem!important;
   text-align: center;
+  color: #000;
 }
 
 .content .post-header h2 {
-  font-size: 3rem!important;
+  font-size: 3.2rem!important;
   text-align: center;
+  color: #333;
 }

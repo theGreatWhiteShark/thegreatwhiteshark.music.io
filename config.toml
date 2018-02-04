@@ -1,11 +1,12 @@
 # baseurl = "https://thegreatwhiteshark.github.io"
-baseurl = "https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io"
+baseurl = "https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/"
 languageCode = "en-us"
-disqusshortname = "ladida"
+disqusshortname = "thegreatwhiteshark-music-io"
 paginate = 7
 pluralizelisttitles = false
 theme = "casper"
 title = "theGreatWhiteShark"
+RSSLink = "http://feeds.feedburner.com/Thegreatwhiteshark-music"
 
 [[menu.main]]
 identifier = "home"

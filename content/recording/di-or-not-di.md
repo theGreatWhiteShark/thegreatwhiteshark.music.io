@@ -1,6 +1,6 @@
 +++
 comment = true
-draft = true
+draft = false
 date = "2018-01-29T20:02:00+01:00"
 tags = ["recording", "spectra"]
 title = "Recording using DI-Boxes"
@@ -9,6 +9,8 @@ slug = "di-or-not-di"
 type = "post"
 
 +++
+
+Work in progress...
 
 # Benefit
 

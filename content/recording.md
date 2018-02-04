@@ -7,4 +7,3 @@ slug = "recording"
 
 +++
 
-Posts concerning the recording of audio in Linux systems.
