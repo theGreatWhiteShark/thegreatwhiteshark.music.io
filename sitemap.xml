@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/music-processing/</loc>
+    <lastmod>2018-01-29T11:58:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/recording/</loc>
+    <lastmod>2018-01-29T11:58:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/about/</loc>
+    <lastmod>2017-12-25T17:39:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/</loc>
+    <lastmod>2017-12-10T18:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/</loc>
+    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/zynaddsubfx-with-tuxguitar/</loc>
+    <lastmod>2017-11-26T18:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/linux-sound-server/</loc>
+    <lastmod>2017-08-10T18:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/recording-audio-using-linux-systems/</loc>
+    <lastmod>2017-08-06T18:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/emulation/</loc>
+    <lastmod>2017-11-26T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/linux/</loc>
+    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/linux-audio/</loc>
+    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/music-processing/</loc>
+    <lastmod>2017-12-10T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/music-processing/</loc>
+    <lastmod>2017-12-10T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/non/</loc>
+    <lastmod>2017-08-06T18:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/recording/</loc>
+    <lastmod>2017-08-10T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/spectra/</loc>
+    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/tags/</loc>
+    <lastmod>2017-11-26T18:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thegreatwhiteshark.github.io/</loc>
+    <lastmod>2018-01-29T11:58:25+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

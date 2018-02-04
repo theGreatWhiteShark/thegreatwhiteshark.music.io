@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Spectral analysis"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Spectral analysis &middot; theGreatWhiteShark" />
+  	<meta property="og:site_name" content="theGreatWhiteShark" />
+  	<meta property="og:url" content="https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/" />
+
+    
+        
+            <meta property="og:image" content="/images/non-banner.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-12-03T18:00:00&#43;01:00" />
+
+    
+    <meta property="article:tag" content="Linux" />
+    
+    <meta property="article:tag" content="music processing" />
+    
+    <meta property="article:tag" content="spectra" />
+    
+    
+
+    <title>Spectral analysis &middot; theGreatWhiteShark</title>
+
+    
+    <meta name="description" content="A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Auda" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="theGreatWhiteShark" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.32.2" />
+
+    <link rel="canonical" href="https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://thegreatwhiteshark.github.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Spectral analysis,
+    "name": Spectral analysis,
+    "wordCount": 855,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/,
+    "datePublished": 2017-12-03T18:00Z,
+    "dateModified": 2017-12-03T18:00Z,
+    
+    "keywords": Linux, music processing, spectra,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            <h3>Topics</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="/linux-audio">Linux audio</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/music-processing">Music processing</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/recording">Recording</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/theGreatWhiteShark">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://thegreatwhiteshark.github.io/">Blogs</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About me</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+      <header class="main-header post-head no-cover">
+	<nav class="main-nav clearfix">
+	  
+
+	  
+	  
+	  <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+	  
+	</nav>
+      </header>
+
+
+
+      <main class="content" role="main">
+
+	<article class="post linux-audio">
+
+	  <header class="post-header">
+	    <h1 class="post-title">Spectral analysis</h1>
+	    
+	      <h2 class="post-subtitle">Real-time spectral analysis in Linux using JACK</h2>
+	    
+	    <small></small>
+
+            <section class="post-meta">
+              
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/linux/">#Linux</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/music-processing/">#music processing</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/spectra/">#spectra</a></span>
+              
+            </section>
+	  </header>
+
+	  <section class="post-content">
+	    
+
+<p>A very important part of digital signal processing (DSP) as well as
+music processing is to analyze the
+<a href="https://en.wikipedia.org/wiki/Spectral_density">spectrum</a> and the
+<a href="https://en.wikipedia.org/wiki/Spectrogram">spectrogram</a> of your
+recording. Even Audacity already can
+<a href="http://manual.audacityteam.org/man/plot_spectrum.html">handle</a> it. So
+let&rsquo;s use it with <a href="http://non.tuxfamily.org/wiki/Non%20Timeline">Non
+Timeline</a> or a general
+<a href="http://jackaudio.org/">JACK</a>-based environment too.</p>
+
+<p>In this blog post I will review the available software for creating
+spectra in Linux systems and how to deploy them. I will not write
+about the Fourier transform and spectra in general. For a very nice
+and gentle introduction I can recommend the second
+chapter of <a href="https://www.springer.com/us/book/9783319219448">Fundamentals of Music
+Processing</a> by Meinard
+Müller.</p>
+
+<h1 id="setup">Setup</h1>
+
+<p>As a prerequisite I assume you have the <a href="http://non.tuxfamily.org/">Non DAW
+Suite</a> installed and JACK configured on
+your system. Now, power up JACK (e.g. via
+<a href="https://qjackctl.sourceforge.io/">QjackCtl</a>) and open <a href="http://non.tuxfamily.org/wiki/Non%20Timeline">Non
+Timeline</a>.</p>
+
+<p>For the sake of reproducibility I will use a <a href="http://freewavesamples.com/gong">gong sample</a> provided by
+<a href="http://freewavesamples.com">freewavesamples.com</a>. So, in order to
+<strong>import the file</strong> into Non Timeline create a new project, add an audio
+track using the <em>a</em> key, click at the
+track using your right mouse key, and select <em>Import source at mouse</em>.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/non-timeline-setup.jpeg" alt="picture Non Timeline loop" /></p>
+
+<p>Since we want to play this little example over and over again for the
+spectral analysis, we have to define a <strong>loop over the whole
+sample</strong>. First, drag the sample to the beginning of the time
+line. Afterwards, create an edit region enclosing the sample by
+pressing the <em>home</em> key and <em>Ctrl+[</em> to mark the beginning of the region
+and <em>end</em> and <em>Ctrl+]</em> to mark its end. Finally, use <em>Shift+Ctrl+L</em>
+to convert the edit region into a playback region and set the
+transport behaviour to looped playback by pressing <em>L</em>. Now, whenever
+you start the playback using <em>Space</em> the sample is played over an over
+again. (Just using the keyboard and almost without any mouse
+interaction. Isn&rsquo;t that awesome?)</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/connection-setup.png" alt="Picture connections" /></p>
+
+<p>In order to actually <strong>hear the output</strong> of Non Timeline, you have to
+connect it with the playback of the system (e.g. using the <em>Connect</em>
+tab of QjackCtl). In the same manner you also have to wire up the
+output of Non Timeline with the JACK-based spectral analysis softwares
+covered in the remainder of the post.</p>
+
+<h1 id="jaaa">Jaaa</h1>
+
+<p><a href="http://kokkinizita.linuxaudio.org/linuxaudio/">Jaaa</a> (JACK and ALSA
+Audio Analyser) is a very simple program to visualize the spectrum of
+sound piped into it.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/jaaa.png" alt="Jaaa picture" /></p>
+
+<p>To start it with JACK support, use the following command in your bash
+shell</p>
+
+<pre><code class="language-bash">jaaa -J &amp;
+</code></pre>
+
+<ul>
+<li>Its binary is available in the distributions repositories</li>
+<li>Quite a number of options to adjust the visualization</li>
+<li>Can display 8 different signals through different input channels</li>
+<li>No control over the FFT, e.g. like window function or window size</li>
+<li>No support for spectrograms (2D plot of spectra against time)</li>
+</ul>
+
+<h1 id="brianalyse">Brianalyse</h1>
+
+<p><a href="http://humanleg.org.uk/code/brianalyze/">Brianalyse</a> is a nice little
+piece of software quite similar to Jaaa.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/brianalyse.png" alt="Brianalyse" /></p>
+
+<ul>
+<li>Can display a arbitrary amount of different signals/channels</li>
+<li>Both the frequency and amplitude axes can be scaled linear or
+logarithmic</li>
+<li>Visually more appealing then Jaaa (well, at least for me)</li>
+<li>Less options to alter the visualization</li>
+<li>Needs to be compiled from source (but only has a few dependencies and
+does not take long)
+<br /></li>
+</ul>
+
+<h1 id="baudline">Baudline</h1>
+
+<p><a href="http://www.baudline.com/index.html">Baudline</a> is a very powerful
+software enabling you to perform a proper exploration of your signals
+in frequency space. Using additional windows, e.g. for displaying the
+average spectrum or monitoring some relevant quantities, and a
+spectrogram this software is capable of uncovering much more hidden
+details of your signals than the previous ones.</p>
+
+<p>But the software is <strong>NOT open source</strong> but free. You can download
+binaries at their <a href="http://www.baudline.com/download.html">homepage</a>.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/baudline-basic.jpeg" alt="Baudline" /></p>
+
+<p>It supports different kinds of Fourier transforms,
+different window types and sizes, and even enables you to perform
+mathematical operations of the different channels and transforms or to
+calculate their auto- or cross-correlation.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/baudline-advanced.jpeg" alt="Baudline extended" /></p>
+
+<ul>
+<li>Spectrogram</li>
+<li>Customizable Visualization</li>
+<li>Customizable Fourier transforms</li>
+<li>Monitoring DSP quantities in separate windows</li>
+<li>Enables mathematical operations on the channels and transforms
+&ndash; Not open source</li>
+</ul>
+
+<h1 id="spectral-analysis-without-jack">Spectral analysis without JACK</h1>
+
+<p>If you are interested in the spectra of audio but do not want to
+use the JACK system, you&rsquo;ll find in <a href="http://spek.cc/">Spek</a> and <a href="http://www.sonicvisualiser.org/">Sonic Visualizer</a> some
+alternatives working on files instead of audio streams.</p>
+
+<p><img src="/images/posts/2017/spectral-analysis/spek.jpeg" alt="Spek" /></p>
+
+<p>Spek itself is quite minimalist. But it works. For a more thorough
+analysis you might want to use the more sophisticated Sonic Visualizer
+instead. But to be honest: I haven&rsquo;t dived into it.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>I personally like <strong>Brianalyse</strong> as a lightweight program for
+displaying the spectrum of a signal most. If you are just wondering
+how your mix is doing in terms of spectral coverage and what effect
+your equalization steps had on your record, I would recommend this
+little piece of software.</p>
+
+<p>If, on the other hand, you want to perform a comprehensive spectral
+analyses or use a spectrogram instead, <strong>baudline</strong> should be your
+software of choice.</p>
+
+<h1 id="further-software">Further software</h1>
+
+<p>Of course the software mentioned above does not represent the whole
+landscape of the Linux ecosystem. Worth mentioning (but not working on
+my system) are also
+<a href="https://sourceforge.net/projects/brp-pacu/">BRP-PACU</a>, which is meant
+to have JACK support too, and <a href="http://friture.org/">friture</a> and
+<a href="http://spectrum3d.sourceforge.net/index.html">Spectrum3d</a>, which are
+visualization programs working on files instead of
+streams. In addition, linux-sound.org published a
+<a href="http://linux-sound.org/scopes.html">list</a> of spectrum visualization
+software some years ago too. But most of them are discontinued,
+unavailable, or not working anymore.</p>
+
+	  </section>
+
+
+	  <footer class="post-footer">
+
+
+	    
+
+
+
+
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://thegreatwhiteshark.github.io">Philipp Müller</a></h4>
+  
+  <p>Read <a href="https://thegreatwhiteshark.github.io">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://thegreatwhiteshark.github.io/">https://thegreatwhiteshark.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+	    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Spectral%20analysis&nbsp;-&nbsp;theGreatWhiteShark&amp;url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2fspectral-analysis-linux%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2fspectral-analysis-linux%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2fspectral-analysis-linux%2f&amp;description=Spectral%20analysis"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2fspectral-analysis-linux%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+	    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/spectral-analysis-linux\/";  
+this.page.identifier = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/spectral-analysis-linux\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://ladida.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+	  </footer>
+	</article>
+
+      </main>
+
+      
+      <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/linux-audio/zynaddsubfx-with-tuxguitar/">
+          <section class="post">
+              <h2>Using ZynAddSubFx as sound synthesizer in TuxGuitar</h2>
+          </section>
+      </a>
+  
+</aside>
+
+      
+
+          <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">theGreatWhiteShark</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+

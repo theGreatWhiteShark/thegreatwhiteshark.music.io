@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Recording audio using Linux systems Pt. I"/>
+<meta name="twitter:description" content="A thorough introduction of how to recording audio only using open source and free software"/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Recording audio using Linux systems Pt. I &middot; theGreatWhiteShark" />
+  	<meta property="og:site_name" content="theGreatWhiteShark" />
+  	<meta property="og:url" content="https://thegreatwhiteshark.github.io/linux-audio/recording-audio-using-linux-systems/" />
+
+    
+        
+            <meta property="og:image" content="/images/non-banner.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="A thorough introduction of how to recording audio only using open source and free software" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-08-06T18:00:00&#43;02:00" />
+
+    
+    <meta property="article:tag" content="recording" />
+    
+    <meta property="article:tag" content="non" />
+    
+    <meta property="article:tag" content="Linux" />
+    
+    
+
+    <title>Recording audio using Linux systems Pt. I &middot; theGreatWhiteShark</title>
+
+    
+    <meta name="description" content="A thorough introduction of how to recording audio only using open source and free software" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="theGreatWhiteShark" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.32.2" />
+
+    <link rel="canonical" href="https://thegreatwhiteshark.github.io/linux-audio/recording-audio-using-linux-systems/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://thegreatwhiteshark.github.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Recording audio using Linux systems Pt. I,
+    "name": Recording audio using Linux systems Pt. I,
+    "wordCount": 3859,
+    "timeRequired": "PT19M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://thegreatwhiteshark.github.io/linux-audio/recording-audio-using-linux-systems/,
+    "datePublished": 2017-08-06T18:00Z,
+    "dateModified": 2017-08-06T18:00Z,
+    
+    "keywords": recording, non, Linux,
+    "description": A thorough introduction of how to recording audio only using open source and free software,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://thegreatwhiteshark.github.io/linux-audio/recording-audio-using-linux-systems/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            <h3>Topics</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="/linux-audio">Linux audio</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/music-processing">Music processing</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/recording">Recording</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/theGreatWhiteShark">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://thegreatwhiteshark.github.io/">Blogs</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About me</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+      <header class="main-header post-head no-cover">
+	<nav class="main-nav clearfix">
+	  
+
+	  
+	  
+	  <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+	  
+	</nav>
+      </header>
+
+
+
+      <main class="content" role="main">
+
+	<article class="post linux-audio">
+
+	  <header class="post-header">
+	    <h1 class="post-title">Recording audio using Linux systems Pt. I</h1>
+	    
+	      <h2 class="post-subtitle">General concepts, applications, and workflow</h2>
+	    
+	    <small>A thorough introduction of how to recording audio only using open source and free software</small>
+
+            <section class="post-meta">
+              
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/recording/">#recording</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/non/">#non</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/linux/">#Linux</a></span>
+              
+            </section>
+	  </header>
+
+	  <section class="post-content">
+	    
+
+<p>As much as I love the Linux system, its incredible amount of free and
+open-source software and distributions, and the whole supportive
+community providing awesome documentation etc., the much pain it was
+to migrate all my music recording and mixing from Windows to Linux. It
+cost me numerous sleepless nights and
+resulted in some quite discouraging failures during my first year of
+diving into open-source.</p>
+
+<p>The reason I had a hard time back then was not a lack of good
+documentation or badly implemented software. No, quite the
+opposite. It was the vast amount of different choices I select. Which
+program to use for recording, which underlying sound server, should I
+use a real-time kernel or not&hellip; And with every choice I made several
+new options popped up. Don&rsquo;t get me wrong, this is the true power of
+the Linux system and enables advanced users to surpass everything they
+possible could accomplish with Windows or Mac. But back then I was
+(even more of) a newbie and I simply failed to get the bigger picture
+of the Linux sound system. As a result, I was not able to trace back
+occurring errors and thus could not properly
+<a href="https://duckduckgo.com/">search</a> for a solution online.</p>
+
+<p>That&rsquo;s why I want to share my experience and try to give you the
+bigger picture of the Linux sound system and its interplay with the
+recording software. I will not provide you with
+detailed information about how to use specific software. This you can
+find in many places online, foremost at the official web
+page of the software. This post concentrates more on the peculiarities
+of Linux&rsquo; take
+on audio and the differences to other operating systems. In addition I
+will point out some nice applications to start recording with and hook
+you up with a number of links for further reading so you can pick your
+own flavor of the Linux audio experience.</p>
+
+<h1 id="for-whom-i-write-these-lines">For whom I write these lines?</h1>
+
+<p>I intend to write this post for both musicians thinking about using
+free and open-source tools to handle their music and for Linux users
+curious about recording some audio.</p>
+
+<p>I will divide this topic in two separate posts: In the this <strong>first
+post</strong> I will provide a simple introduction into the Linux sound
+system, but concentrate more on its overall character and on programs
+to use during recording. So if you just want to record some music and
+are not that
+interested into the underlying peculiarities of the Linux sound
+system, here you will find what you are looking for.</p>
+
+<p>If you experience some problems with you setup or want to learn more
+about what&rsquo;s going on under the hood, check out the <a href="/linux-sound-server">second
+post</a> of this topic. In there I will shed some
+light on how the
+<a href="http://www.alsa-project.org/main/index.php/Main_Page">ALSA</a> part of
+the Linux kernel is handling your sound cards and how the interplay
+and the configuration of the Linux sound servers
+<a href="https://freedesktop.org/wiki/Software/PulseAudio">PulseAudio</a> and
+<a href="http://jackaudio.org/">JACK</a> does work.</p>
+
+<p>Please note that these posts are tailored for actual audio
+recording. But if you want to generate some electronic sounds using
+<a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a> instead, don&rsquo;t worry. Most
+of the steps described in here will apply as well.</p>
+
+<h1 id="what-makes-linux-audio-processing-hard-different">What makes Linux audio processing hard/different?</h1>
+
+<p>For those of you new to the Linux system you might wonder why I make
+such a big deal out of this topic. Can&rsquo;t we just use a big program
+handling everything related to our recording session, a so called
+<a href="https://en.wikipedia.org/wiki/Digital_audio_workstation">Digital Audio Workstation
+(DAW)</a>, like
+Cubase on Windows or Pro Tools on Mac?</p>
+
+<p>Unfortunately not. Linux is just not intended to be used this way and
+it is very important for you to understand the actual difference to be
+able to harness its true power.</p>
+
+<h2 id="the-unix-principle">The Unix principle</h2>
+
+<p>One of the core concepts of the <a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix
+philosophy</a> is to</p>
+
+<blockquote>
+<p>Write programs, which do one thing and do it well</p>
+</blockquote>
+
+<p>This way you break down complex problems into smaller ones, each
+addressed by one free and open-source program (and its alternatives)
+and maintained by a small group of people. Those small and robust
+programs you can then glue together to produce a sophisticated,
+modular, and highly personalized workflow solving all your problems.</p>
+
+<p>What sounds really nice for programming tasks or the personalization
+of your desktop feels quite alarming when handling audio. So there is
+a program handling the playback of your recorded audio, another one
+applying a compressor to it, and a third one being the compressor
+itself? And I have to glue them together manually? Well, yes and no,
+not necessarily.</p>
+
+<p>Fortunately the handling of the effect chain is done by your recording
+software, relying on the underlying Linux sound server responsible for
+gluing the individual programs together. So by using <a href="http://non.tuxfamily.org/">Non
+DAW</a> or <a href="https://ardour.org/">Ardour</a> with
+JACK or <a href="http://www.audacityteam.org/">Audacity</a> with PulseAudio you
+will have a DAW for handling your audio after all.</p>
+
+<p>Well, then what does make the Linux system different? Two things:
+First, you
+are not restricted to your DAW anymore. You want to extract some audio
+from a movie and incorporate it into your music? Just connect the
+<a href="https://www.videolan.org/vlc/">vlc player</a> or another sound source in
+your system to your recording program. You found a neat little
+(jack-aware, see later)
+audio tool in the internet? Just integrate it into your workflow. The
+difference in volume between dialogs and action scenes in movies gets
+on your nerves? Just add a compressor between your browser/media
+player and your system&rsquo;s sound output. The possibilities are endless.</p>
+
+<p>Secondly, if some plugin (like an EQ) in your recording software
+crashes, do not blame the authors of your DAW. Most of the times those
+little plugins (like <a href="http://lv2plug.in/">LV2</a>,
+<a href="http://www.ladspa.org/">LADSPA</a>, <a href="http://calf-studio-gear.org/">Calf</a>
+, or <a href="http://tap-plugins.sourceforge.net/">TAP</a>) are small programs
+themselves being maintained by a different group of people. Keep this
+in mind while searching for a solution online!</p>
+
+<h2 id="multi-user-system">Multi-user system</h2>
+
+<p>The Linux system is intended to be used by many users at the same
+time. Not just the huge machines in some clusters of universities or
+companies, but your personal laptop with just one configured user
+account too. Just enter the following command into your
+<a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29">Bash</a> to list
+all available users on your system.</p>
+
+<pre><code class="language-bash">cat /etc/passwd
+</code></pre>
+
+<p>Next to your actual user and root there are many system services, like
+<em>lp</em> for printing or <em>lightdm</em> for handling your graphical desktop,
+having an user account by themselves. This is done by Linux in order
+to strength the security of your system. Even when an intruder is able
+to obtain access to one of your system&rsquo;s services, the person would
+end up in an account having very limited privileges. For all those
+different users to work together on a single machine, the Linux kernel
+provides a scheduling system that allows all users to access the
+system&rsquo;s resources, the CPU, and all the additional hardware on more
+or less equal terms.</p>
+
+<p>But here we run into problems when dealing with audio on a Linux
+system: accessing your sound card and writing the input to disk
+by your DAW does have in principle the same priority as your
+Thunderbird while checking your mail. The more users/programs/services
+want to use your CPU, the less time every one has to perform its
+task. Thus the latency (the time your signal needs traveling from the
+input of your sound card to the speakers) in Linux systems is quite
+high.</p>
+
+<p>In order to reduce the latency one can use a Linux kernel tailored for
+real-time usage (those with an <em>-rt-</em> in their name) or allow the
+recording software to put a higher load on the CPU by changing the
+configuration of the underlying Linux sound server. Both options are
+not at all
+recommended for people new to the Linux system. You haven&rsquo;t compiled
+your own Linux kernel yet? Then do not consider doing so just to
+improve your latency!</p>
+
+<p>Four years ago I wanted to get Ardour and JACK running on low
+latency. But on heavy load the setup created some kernel panic (as I
+know in hindsight) and my system froze whenever I something was going
+on in the background or my Ardour-files were getting to large. I tried
+to fix it. But I failed and it was a massive waste of time. Better
+don&rsquo;t go along this direction.</p>
+
+<p>Don&rsquo;t get me wrong. I encourage you to try some low latency
+settings. But when you experience severe problems you can not really
+reproduce, do it as Scar advised in the lion king: run away and never
+return! (unless you become a Linux-pro by then)</p>
+
+<p>So when you do not need a very low latency setting, don&rsquo;t go for it!</p>
+
+<h1 id="choice-of-recording-software-and-sound-server">Choice of recording software and sound server</h1>
+
+<p>Now that you are aware of the most important features and restrictions
+of the Linux sound system, let&rsquo;s try to answer the following question:
+<em>What recording software and Linux sound server fits me best?</em></p>
+
+<h2 id="need-for-low-latency">Need for low latency</h2>
+
+<p>The most pressing subquestion on our way the determine the answer of
+the former one is: <em>Do I need a low latency setup?</em></p>
+
+<p>You do so whenever you want to use monitoring (listen to the recorded
+sound) while recording. This is for example the case when you input a
+clean guitar into your system, apply an amp simulation via some
+software, and listen to the resulting output while actually playing
+the guitar. Another common scenario is to play a keyboard while using
+not the keyboard&rsquo;s sound synthesizer but a Linux based one.</p>
+
+<p>In those cases you should use the JACK sound server over
+PulseAudio since the former has a better latency handling. Along
+with it I would recommend using the Non DAW (or Ardour) as recording
+software. Use the
+default settings of the sound server and check whether the
+latency is already low enough for you to barely hear any delay at
+all. If you do and you have to get to even lower latencies, you have
+no other choice but to apply some <a href="https://wiki.linuxaudio.org/wiki/system_configuration">real-time
+settings</a> for
+your kernel and settings.</p>
+
+<p>If you have a nice amp and want to record, mix, and master your music,
+you are actually not in need of a low latency setting. Instead I would
+highly recommend you to buy an external sound card capable of
+monitoring on its own. Those devices split the signal into two and
+supply both your computer and some headphones/boxes with the original
+sound. Therefore, there is no need anymore to keep the latency
+as low as possible. I&rsquo;m using
+<a href="http://tascam.com/product/us-2x2/">this</a> sound card and it&rsquo;s doing
+quite a fine job. But before you get yourself a sound card, make sure
+it will run properly with your Linux system (list of supported devices
+by the
+<a href="http://www.alsa-project.org/main/index.php/Matrix:Main">alsa-project</a>
+and the (German) audio for Linux
+<a href="http://wiki.datentraeger.org/index.php?title=Hardware">page</a>).</p>
+
+<h2 id="degree-of-sophistication-of-your-sound-server">Degree of sophistication of your sound server</h2>
+
+<p>In case you don&rsquo;t need a very low latency setting, you have two
+choices:</p>
+
+<ol>
+<li>Use the
+<a href="https://freedesktop.org/wiki/Software/PulseAudio">PulseAudio</a>
+system along with <a href="http://www.audacityteam.org/">Audacity</a>, which
+works out of the box and is a very robust but basic system. For
+some quick recording and mixing this should be your
+system of choice. If you on the other hand do not intend to just
+record and mix some tracks but to build your own professional audio
+processing system, you will find its features too limiting.</li>
+<li>Use the <a href="http://jackaudio.org/">JACK</a> sound server with <a href="http://non.tuxfamily.org/">Non
+DAW</a> or
+<a href="https://ardour.org/">Ardour</a>. This setup let&rsquo;s you harness all the
+power of the Linux sound system but it&rsquo;s also not that straight
+forward to set up and configure.</li>
+</ol>
+
+<p>If you are (completely) new to Linux or want to get things done
+quickly, I would
+recommend you to use the first option. In all other cases try the
+second one. It needs more time to get started, but you will have more
+powerful tools at hand in the long run.</p>
+
+<p>In the next sections I will present a number of helpful programs to
+be used along with those two options. This will be of course just a
+very sparse compilation and most of the programs will actually run
+with both sound servers. It&rsquo;s intended to serve as a convenient starting
+point for the corresponding setup. For a more detailed introduction
+into the individual applications, please follow the corresponding
+links, and for more information regarding the sound server and their
+configuration, please see the second post related to this topic.</p>
+
+<h1 id="recording-using-pulseaudio">Recording using PulseAudio</h1>
+
+<p>The best thing of the PulseAudio setup is: it&rsquo;s (most probably)
+already installed and running on your Linux system. So you basically
+just have to install the other programs via your packet manager and
+you are good to go.</p>
+
+<h2 id="configuring-pulseaudio">Configuring PulseAudio</h2>
+
+<p>The different inputs and outputs of your sound system can best be
+handled using <strong>pavucontrol</strong>. But be careful! You can use this
+control to test your system. But do not try to select one and the same
+sound card (in case you have more than one) with both Pavucontrol and
+Audacity. They will interfere with each other and you most probably
+end up with no input/output signal in Audacity.</p>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/pavucontrol.png" alt="image pavucontrol" /></p>
+
+<p>Also check out <strong>pasystray</strong> to control PulseAudio via a small icon in
+your status bar and <strong>paprefs</strong> if you want to use it via your local
+network.</p>
+
+<p>Local network? That&rsquo;s right, you can use PulseAudio to transmit audio
+signals via your
+<a href="https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network">network</a>. So
+in principle you just have to have one computer (e.g. a Raspberry)
+connected to your speakers and all your other devices can stream
+their audio to this machine for playback. I works rather smoothly but
+it&rsquo;s not intended to be used with wireless connections.</p>
+
+<h2 id="audacity">Audacity</h2>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/audacity-linux.png" alt="image audacity" /></p>
+
+<p><a href="http://www.audacityteam.org/">Audacity</a> is a full-fledged recording
+software allowing you record audio and mix the results. It features a
+<a href="http://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page">wiki</a>, a
+detailed <a href="http://manual.audacityteam.org/">manual</a>, and an active
+<a href="http://forum.audacityteam.org/">community</a>. Check out its <a href="http://www.audacityteam.org/about/features/">feature
+list</a> to get a feeling of
+what it&rsquo;s capable of.</p>
+
+<p>I do like this program a lot. It&rsquo;s simple, got many essential features
+without being overloaded, and it&rsquo;s easy to use. As long as you do just
+basic recording and a little bit of audio manipulation, you will find
+everything there you need.</p>
+
+<p>For a more profound audio processing I would nevertheless discourage
+you from using it. The reason is its invasive audio
+manipulation. In other words, every time you apply an effect to some
+selected audio the original one gets overwritten. In order to slightly
+change a parameter of your effect, you have
+to undo your changes and reapply the effect with a different
+setting. This gets quite cumbersome as soon as you want to mix many
+audio tracks in parallel.</p>
+
+<p>For all of you who have tried Audacity in the past: Compared to its
+state when I first came into contact with it some ten years ago the
+application did a huge step forward. So it may be much more powerful
+than you actually think. Just give it a shot. ;)</p>
+
+<h2 id="lmms">LMMS</h2>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/lmms.png" alt="image lmms" /></p>
+
+<p>What&rsquo;s Audacity for working with sound signals (e.g. an amplified
+guitar) is <a href="https://lmms.io/">LMMS</a> for working with MIDI sounds. It
+features an extensive <a href="https://lmms.io/documentation/">documentation</a>
+and serves as both a MIDI sequencer (a program to write MIDI tracks)
+and a MIDI sound synthesizer (a program replacing a MIDI signal with a
+corresponding sound).</p>
+
+<p>LMMS offers a great way to produce some electronic sound. If you on
+the other hand just intend to produce some artificial drums (and
+nothing more), I would recommend the use of Hydrogen instead (see
+later).</p>
+
+<h1 id="recording-using-jack">Recording using JACK</h1>
+
+<p>The configuration of <a href="http://jackaudio.org/">JACK</a> is not as straight
+forward as with PulseAudio. Fortunately you do not necessarily have to
+get a plain Linux distribution and set up the JACK server all by
+yourself. Others already did this for you and bundled the result with
+a ton of audio software. Thus, you find a number of different
+Linux distributions already tailored for audio recording and
+processing. If you are new to Linux, I would definitely recommend
+using one of those (maybe on an addition
+<a href="http://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/">partition</a>
+using <a href="https://help.ubuntu.com/community/Grub2">Grub2</a>).</p>
+
+<p>The most widely used ones are
+<a href="https://ubuntustudio.org/">UbuntuStudio</a> and
+<a href="http://linuxbsdos.com/2014/11/08/a-beginners-guide-to-disks-and-disk-partitions-in-linux/">KXStudio</a>. They
+do not just provide a preconfigured environment but also loads of
+resources and documentation to use them properly. Others are
+<a href="https://www.ap-linux.com/">Audiophile Linux</a>, <a href="http://www.bandshed.net/avlinux/">AV
+Linux</a>, or
+<a href="https://fedoraproject.org/wiki/Fedora_jam">FedoraJam</a>.</p>
+
+<p>Worth mentioning, but quite out of context, is also
+<a href="http://www.runeaudio.com/">RuneAudio</a>. It intends to convert your
+mini computer into a high quality media server.</p>
+
+<h2 id="configuring-jack">Configuring JACK</h2>
+
+<p>To handle JACK you firstly have to
+<a href="http://libremusicproduction.com/articles/demystifying-jack-%E2%80%93-beginners-guide-getting-started-jack">configure</a>
+its startup and secondly to deal with all the connections between the
+programs.</p>
+
+<p>For both steps there are a number of programs solving the task. But I
+would recommend <a href="https://qjackctl.sourceforge.io/">QJackCtl</a>, which
+can handle both of them.</p>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/qjackctlMainForm1.png" alt="image qjackctl" /></p>
+
+<p>To connect the output of one app with the input of another, just press
+the <em>Connect</em> button and draw a line between the two nodes by hand.</p>
+
+<p>As an alternative (e.g. when you are using KXStudio) you can use
+<a href="http://kxstudio.linuxaudio.org/Applications:Cadence">Cadence</a> and its
+siblings to control the JACK sound server.</p>
+
+<p>Note: you have to use
+<a href="http://jackaudio.org/applications/">applications</a> capable of
+communicating with JACK!</p>
+
+<h2 id="non-daw">Non DAW</h2>
+
+<p>Instead of providing a monolithic DAW defying the Unix principle, the
+<a href="http://non.tuxfamily.org/">Non DAW</a> consists of four stand-alone
+applications.</p>
+
+<h4 id="non-timeline-http-non-tuxfamily-org-wiki-non-20timeline"><a href="http://non.tuxfamily.org/wiki/Non%20Timeline">Non Timeline</a></h4>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/non-timeline.png" alt="image non-timeline" /></p>
+
+<p>For recording and editing audio.</p>
+
+<h4 id="non-sequencer-http-non-tuxfamily-org-wiki-non-20sequencer"><a href="http://non.tuxfamily.org/wiki/Non%20Sequencer">Non Sequencer</a></h4>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/non-sequencer.png" alt="image non-sequencer" /></p>
+
+<p>For sequencing and synthesizing MIDI sounds.</p>
+
+<h4 id="non-mixer-http-non-tuxfamily-org-wiki-non-20mixer"><a href="http://non.tuxfamily.org/wiki/Non%20Mixer">Non Mixer</a></h4>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/non-mixer.png" alt="image non-mixer" /></p>
+
+<p>For mixing different audio tracks (recorded in e.g. Non Timeline or
+Non Sequencer) and applying effects like LADSPA to them.</p>
+
+<h4 id="non-session-manager-http-non-tuxfamily-org-wiki-non-20session-20manager"><a href="http://non.tuxfamily.org/wiki/Non%20Session%20Manager">Non Session Manager</a></h4>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/non-session.png" alt="image non-session" /></p>
+
+<p>To control and restore your recording session.</p>
+
+<p>You are not forced to use or even install those four applications
+together. You could easily use e.g. a different mixer instead of the
+Non one (but I would highly recommend to stick with the original one)
+with Non Timeline.</p>
+
+<p>Since the Non suite is incredibly powerful and at the same time very
+slim and clearly structured as well as really fast, it is my recording
+application of choice. The only downside for Linux newbies may be the
+fact that you have to compile those applications from source. (Well,
+maybe they are part of the repositories of some Linux audio
+distributions. Don&rsquo;t know)</p>
+
+<h2 id="ardour">Ardour</h2>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/ardour.png" alt="image ardour" /></p>
+
+<p>An alternative to the Non suite is <a href="https://ardour.org/">Ardour</a>. For
+a JACK-based application it is quite user friendly since it takes care
+of starting up your JACK server and connecting all the basic inputs
+and outputs. On the other hand the application itself is overloaded by
+features and has grown more complex than necessary.</p>
+
+<p>But again: If you are new to the Linux system, this might be the
+better entry point into the JACK-based world of audio processing.</p>
+
+<h1 id="further-applications-and-hints">Further applications and hints</h1>
+
+<h2 id="hydrogen">Hydrogen</h2>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/hydrogen.png" alt="image hydrogen" /></p>
+
+<p>Whenever you want to make some artificial drums along with your music,
+I would recommend the usage of
+<a href="http://www.hydrogen-music.org/hcms/">Hydrogen</a>. It serves as an
+application for both programming/writing your MIDI-based drum tracks
+and replacing the MIDI notes by synthesized drum sounds. Keep this
+in mind. It was strange for me in at first, but tools like EZdrummer
+actually do the work of two programs seamlessly: of a MIDI sequencer
+and a MIDI synthesizer.</p>
+
+<p>Worth mentioning is also <a href="https://www.drumgizmo.org/wiki/">DrumGizmo</a>
+due to its very interesting approach. But this program serves as a
+synthesizer only and you have to rely on LMMS or Hydrogen to create
+your MIDI drum track.</p>
+
+<h2 id="tuxguitar">TuxGuitar</h2>
+
+<p><img src="/images/posts/2017/recording-audio-using-linux-systems/tuxguitar.jpeg" alt="image tuxguitar" /></p>
+
+<p><a href="https://sourceforge.net/projects/tuxguitar/">TuxGuitar</a> is the
+open-source alternative to GuitarPro and an awesome way of noting down
+your (string-based) music.</p>
+
+<p>For quite some years the project seemed to be abandoned. But luckily
+someone continued the development and there were two new released
+versions during the last year (2016). So the tux is not dying here
+after all. :)</p>
+
+<h2 id="communities-dedicated-to-linux-audio">Communities dedicated to Linux audio</h2>
+
+<p>Of course there are a number of web pages specialized in providing you
+with information about the Linux audio system and how to use its tools
+for crafting music.</p>
+
+<ul>
+<li><a href="https://linuxmusicians.com/">LinuxMusician</a> and their <a href="https://wiki.linuxaudio.org/wiki/start">wiki</a></li>
+<li><a href="http://planet.linuxaudio.org/">planet.linuxaudio.org</a> and their
+<a href="http://www.linuxaudio.org">main page</a> to get in touch with new
+projects, resources, and software for Linux audio</li>
+<li><a href="http://www.crazy-audio.com/">Crazy audio</a></li>
+<li><a href="libremusicproduction.com">Libre Music Production</a></li>
+<li><a href="https://wiki.archlinux.org/index.php/Professional_audio">ArchLinux
+wiki</a> on
+how to configure a professional Linux audio system</li>
+<li><a href="a4l.de">Audio4Linux</a> a German web page with a nice
+<a href="http://wiki.datentraeger.org/index.php?title=Hauptseite">wiki</a> and
+<a href="http://www.audio4linux.de/forum">forum</a></li>
+<li><a href="http://linux-audio.com/">Linux-audio.com</a> featuring a general
+introduction into Linux as well as a number of links to
+configuration tutorials</li>
+</ul>
+
+<h2 id="about-amp-emulation">About amp emulation</h2>
+
+<p>As with most commercial DAWs within Linux you also have the option of
+recording a clean guitar sound and emulating the effect of an
+amplifier using software (e.g. with <a href="http://guitarix.org/">Guitarix</a>
+or <a href="http://rakarrack.sourceforge.net/">Rakarrack</a>). But at this
+point you really start to feel the difference between free and
+open-source software and overpriced commercial one. The artificial
+guitar (and drum) sounds of Linux applications are not that
+sophisticated.</p>
+
+<p>Instead I would recommend you to get a small (preferably valve-based)
+amplifier and some effect pedals and record your songs via the line-in
+or microphone. I have a <a href="https://www.blackstaramps.com/uk/products/ht-5r">Blackstar
+HT-5</a> for all my home
+recordings and I enjoy it very much. One to five watt are more than
+enough for your living room and nothing can beat a real valve amp.</p>
+
+<h2 id="recording-tips">Recording tips</h2>
+
+<p>I won&rsquo;t go into any detail regarding the actual recording procedure in
+here. You can find lots of recording tutorials online.</p>
+
+<p>Do not restrict your search to the applications named above. Almost
+all tools in Cubase or Pro Tools do have an equivalent in the Linux
+world and with your working setup you can transfer their tips and
+tricks to the Linux realm in no time.</p>
+
+<p>Only a few hints to wrap things up:
+- Tune your instrument and attach new strings
+- Always use a microphone instead of the line-out of your amp (for the
+  final recording). A good sound has to travel through air at least
+  once
+- Do not try to make each single instrument sound as massive as
+  possible. In the end it&rsquo;s their interplay between all of them that
+  matters most and in mixing you end up cutting as many frequencies as
+  you are boosting.</p>
+
+<h1 id="further-audio-posts-i-plan-to-do-in-this-blog">Further audio posts I plan to do in this blog</h1>
+
+<p>In the near future I intend to fulfill one of my longtime dreams: to
+go on a journey for the perfect sound of my music.</p>
+
+<p>Being able to compose and play the music you love the most is just one
+side of the coin. The other is its actual sound. I want to shape the
+sound of my music the best way possible by just using my little guitar
+amp and tons of free and open-source software. And of course I also
+intend to write about it. :)</p>
+
+<p>Just in case it takes me a while and you are already curious, I will
+provide you with my current curriculum for the next
+week(end)s/months.</p>
+
+<p>After reading chapter 10 of <a href="https://www.amazon.com/Crafting-Digital-Media-Audacity-Blender/dp/1430218878">Daniel James&rsquo; Crafting digital
+media</a>
+for an introduction (don&rsquo;t buy the whole book for this one chapter), I
+will read the following:
+1. The first two chapters of <a href="https://www.springer.com/us/book/9783319219448">Meinard Müller&rsquo;s - Fundamentals of Music
+   Processing</a> to get
+   the vocabulary of the music processing community
+2. The documentation of different Linux audio plugins
+   (<a href="http://lv2plug.in/">LV2</a>, <a href="http://www.ladspa.org/">LADSPA</a>,
+   <a href="http://calf-studio-gear.org/">Calf</a> , or
+   <a href="http://tap-plugins.sourceforge.net/">TAP</a>) and decide which set of
+   those I will use along the next parts of the journey
+3. Read <a href="https://www.amazon.com/Mixing-Audio-2e-Roey-Izhaki/dp/0240522222">Izhaki - Mixing
+   Audio</a>
+   to get some basic mixing skills
+4. Read rest of <a href="https://www.springer.com/us/book/9783319219448">Meinard Müller - Fundamentals of Music
+   Processing</a> to
+   learn how to analyze audio. The overall goal is to be able to
+   manipulate music in such a way it sounds as close as possible as
+   some reference songs
+5. Read <a href="http://www.soundonsound.com/reviews/bob-katz-mastering-audio">Bob Katz - Mastering Audio: the art and the
+   science</a>
+   to get deeper knowledge about the mastering process</p>
+
+	  </section>
+
+
+	  <footer class="post-footer">
+
+
+	    
+
+
+
+
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://thegreatwhiteshark.github.io">Philipp Müller</a></h4>
+  
+  <p>Read <a href="https://thegreatwhiteshark.github.io">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://thegreatwhiteshark.github.io/">https://thegreatwhiteshark.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+	    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Recording%20audio%20using%20Linux%20systems%20Pt.%20I&nbsp;-&nbsp;theGreatWhiteShark&amp;url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2frecording-audio-using-linux-systems%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2frecording-audio-using-linux-systems%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2frecording-audio-using-linux-systems%2f&amp;description=Recording%20audio%20using%20Linux%20systems%20Pt.%20I"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2frecording-audio-using-linux-systems%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+	    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/recording-audio-using-linux-systems\/";  
+this.page.identifier = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/recording-audio-using-linux-systems\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://ladida.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+	  </footer>
+	</article>
+
+      </main>
+
+      
+      <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="/linux-audio/linux-sound-server/">
+          <section class="post">
+              <h2>Recording audio using Linux systems Pt. II</h2>
+              
+          </section>
+      </a>
+  
+  
+</aside>
+
+      
+
+          <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">theGreatWhiteShark</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+

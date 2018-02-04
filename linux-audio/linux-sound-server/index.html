@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Recording audio using Linux systems Pt. II"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Recording audio using Linux systems Pt. II &middot; theGreatWhiteShark" />
+  	<meta property="og:site_name" content="theGreatWhiteShark" />
+  	<meta property="og:url" content="https://thegreatwhiteshark.github.io/linux-audio/linux-sound-server/" />
+
+    
+        
+            <meta property="og:image" content="/images/non-banner.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-08-10T18:00:00&#43;01:00" />
+
+    
+    <meta property="article:tag" content="recording" />
+    
+    <meta property="article:tag" content="Linux" />
+    
+    
+
+    <title>Recording audio using Linux systems Pt. II &middot; theGreatWhiteShark</title>
+
+    
+    <meta name="description" content="After we got an overview about the peculiarities of the Linux system with respect to audio and recording in the last post we will dive some more into the Linux " />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="theGreatWhiteShark" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.32.2" />
+
+    <link rel="canonical" href="https://thegreatwhiteshark.github.io/linux-audio/linux-sound-server/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://thegreatwhiteshark.github.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Recording audio using Linux systems Pt. II,
+    "name": Recording audio using Linux systems Pt. II,
+    "wordCount": 1503,
+    "timeRequired": "PT8M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://thegreatwhiteshark.github.io/linux-audio/linux-sound-server/,
+    "datePublished": 2017-08-10T18:00Z,
+    "dateModified": 2017-08-10T18:00Z,
+    
+    "keywords": recording, Linux,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://thegreatwhiteshark.github.io/linux-audio/linux-sound-server/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            <h3>Topics</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="/linux-audio">Linux audio</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/music-processing">Music processing</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/recording">Recording</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/theGreatWhiteShark">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://thegreatwhiteshark.github.io/">Blogs</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About me</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+      <header class="main-header post-head no-cover">
+	<nav class="main-nav clearfix">
+	  
+
+	  
+	  
+	  <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+	  
+	</nav>
+      </header>
+
+
+
+      <main class="content" role="main">
+
+	<article class="post linux-audio">
+
+	  <header class="post-header">
+	    <h1 class="post-title">Recording audio using Linux systems Pt. II</h1>
+	    
+	      <h2 class="post-subtitle">The Linux sound servers</h2>
+	    
+	    <small></small>
+
+            <section class="post-meta">
+              
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/recording/">#recording</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/linux/">#Linux</a></span>
+              
+            </section>
+	  </header>
+
+	  <section class="post-content">
+	    
+
+<p>After we got an overview about the peculiarities of the Linux system
+with respect to audio and recording  in the <a href="recording-audio-using-linux-systems">last
+post</a> we will dive some more into
+the Linux sound system itself.</p>
+
+<p>As for most other Linux subsystems the audio one grew quite naturally
+too. So you have quite a number of alternatives and different ways to
+achieve a goal. Not just in using different software, but also in the
+underlying sound servers. While this grants advanced users quite some
+flexibility, it&rsquo;s almost threatening for beginners. That&rsquo;s why the overall
+goal of this post is to provide you with a bigger picture of the main
+Linux sound servers. If you do not understand every last bit of
+information in here, don&rsquo;t worry.</p>
+
+<h1 id="the-linux-way-of-handling-hardware">The Linux way of handling hardware</h1>
+
+<p>I don&rsquo;t want to go into too much detail here but instead just hook you
+up with the general concepts of hardware handling in Linux. This will
+become quite handy whenever your sound card is not properly
+addressed by your system and you want to search for a solution
+online.</p>
+
+<p>The Linux system (or the Linux kernel, to be more precise) needs two
+things to properly communicate with a sound card: a driver and a
+firmware. A driver is something like a protocol mapping a general
+interface to the card&rsquo;s internal representation. Therefore drivers
+enable all cards to speak the same language. Sound card drivers are
+collected within the <a href="http://www.alsa-project.org/main/index.php/Main_Page">Advanced Linux Sound Architecture
+(ALSA)</a> package,
+which itself is part of the Linux kernel. So they are already
+installed on your system and you are most probably already good to
+go. Sometimes you need to install some firmware, which is more or less
+a set of configuration to initialize the communication with the card,
+from some non-free repositories. But beware the
+<a href="https://www.openbsd.org/lyrics.html#39">blob</a>!</p>
+
+<p>After initializing the communication the Linux system manages the
+access of the sound card according to one of its core concepts:</p>
+
+<blockquote>
+<p>Everything is a file.</p>
+</blockquote>
+
+<p>All the entry points will be stored in <em>/dev/snd/</em> while
+<em>/proc/asound/cards</em> holds a list of recognized cards.</p>
+
+<p>But enough on the Linux system itself. To wrap things up, I compile a
+short list of bash commands you&rsquo;ll find helpful for debugging and then
+let&rsquo;s continue with the actual Linux sound servers.</p>
+
+<ul>
+<li><em>lshw</em> - Compiles a list of all available hardware</li>
+<li><em>lspci -nn</em> - Very detailed list of information about every
+connection established via PCI and PCIe</li>
+<li><em>lsmod</em> - Lists all available kernel modules. The ones with <em>snd</em> in
+their names are commonly the ones responsible for the handling of
+the sound card</li>
+<li><em>modprobe</em> - Loads an inactive kernel module</li>
+<li>ls <em>/lib/firmware</em> - Location of the firmware</li>
+<li><em>dmesg</em> - Prints all system messages. Quite helpful in combination
+with removing and adding your USB sound card</li>
+</ul>
+
+<h1 id="overall-structure-of-the-linux-sound-servers-and-basic-alsa-commands">Overall structure of the Linux sound servers and basic ALSA commands</h1>
+
+<p><img src="/images/posts/2017/linux-sound-systems/Linux-sound-server-sketch.svg" alt="sketch of the Linux sound server" /></p>
+
+<p>While the <a href="http://www.alsa-project.org/main/index.php/Main_Page">ALSA</a>
+package serves as a bridge to the hardware we will actually use two
+other systems for handling the sound: JACK and PulseAudio. Those sound
+servers will talk <em>via</em> ALSA with your sound card. So whenever you
+can&rsquo;t access your sound card from within Ardour or Audacity it&rsquo;s most
+probably the ALSA system itself and not the sound server on top having
+an issue. Formerly ALSA was intended to provide its own sound server
+too but its configuration is quite cumbersome and I would discourage
+you from using it. If you are still up for it, check out the basic
+introduction of <a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture#Concepts">concepts and acronyms on
+Wikipedia</a>,
+the
+<a href="http://www.alsa-project.org/main/index.php/Documentation">official</a>
+and <a href="http://alsa.opensrc.org/">unofficial</a> documentation, as well as
+<a href="https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture">ArchLinux&rsquo;
+take</a>
+on personalizing ALSA&rsquo;s <em>~/.asoundrc</em> configuration file.</p>
+
+<p>In addition ALSA provides a number of bash commands, which are quite
+handy for checking if your sound cards are working properly or not.</p>
+
+<ul>
+<li><em>alsamixer</em> - A command line mixer for controlling volume and the
+selection of the sound card</li>
+<li><em>aplay &ndash;list-devices</em> - Returns a list of all available audio devices</li>
+<li>*aplay -D CARDNAME AUDIOFILE.wav|.flac - Playback of a audio file
+via a specific sound card. It can be referenced with its
+full name or the its number (aplay &ndash;list-devices return card
+NUMBER: &hellip;) using <em>hw:NUMBER</em>. Note, you can only play
+uncompressed sound files using aplay! Mp3 won&rsquo;t work.</li>
+</ul>
+
+<h1 id="the-pulseaudio-sound-server">The PulseAudio sound server</h1>
+
+<p><a href="https://freedesktop.org/wiki/Software/PulseAudio">PulseAudio</a> is the
+sound server already installed on most contemporary Linux systems per
+default. In contrast to ALSA it comes with built-in software mixing
+enabling you to play music from more than one audio source
+simultaneously. All those signals will be combined and sent to the
+sound card via the ALSA sink. It offers a bunch of
+<a href="https://freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/">modules</a>
+handling the audio stream and is able to transmit audio signals via
+your local
+<a href="https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network">network</a>.</p>
+
+<p>In addition it offers some quite intuitive graphical user interfaces,
+like <strong>pavucontrol</strong> (volume control and sound card selection),
+<strong>paprefs</strong> (network access), and <strong>pasystray</strong> (status bar icon for
+quick control). Usually these programs already deal with all
+configurations you are interested in.</p>
+
+<p>Alternatively you can interact with PulseAudio via the command line in
+the following way.</p>
+
+<ul>
+<li><em>pulseaudio -k</em> or <em>killall pulseaudio</em> - Stopping the PulseAudio
+server. If &lsquo;autospawn&rsquo; is activated, the sound server will restart
+as soon as any application on your computer tries to connect
+with it. You can override this behavior by changing your local copy
+(<em>~/.config/pulse/client.conf</em>) of the <em>/etc/pulse/client.conf</em>
+file.</li>
+<li><em>pulseaudio -D</em> - Starts the server as a daemon (it will run in the
+background and will continue even if you close the command line)</li>
+<li><em>paplay</em> - PulseAudio&rsquo;s version of ALSA&rsquo;s <em>aplay</em></li>
+<li><em>pacmd</em> - Will open an interactive shell to control the PulseAudio
+server</li>
+</ul>
+
+<p>For a complete list of all <em>pacmd</em> commands run <em>man pulse-cli-syntax</em>
+in your bash.</p>
+
+<p>PulseAudio itself is controlled via four different script located in
+<em>/etc/pulse</em>. If you intend to alter their content, please make a
+local copy in <em>~/.config/pulse</em> and edit those files instead. The
+<em>daemon.conf</em> file sets the basic parameters of the sound server, like
+the sample rate, their format, and the handling of system resources,
+while the <em>client.conf</em> file controls the default behavior of how
+application will interact with the PulseAudio server. <em>default.conf</em>
+and <em>system.conf</em> are basically compilations of commands available
+through <em>pacmd</em> which will be executed on startup of the sound
+server. The &lsquo;system&rsquo; way of startup is an alternative barely ever used
+(but if you have a static command line device, this one might be
+interesting for you).</p>
+
+<p>Check out the <a href="https://freedesktop.org/wiki/Software/PulseAudio/Documentation/">official
+documentation</a>,
+<a href="https://wiki.archlinux.org/index.php/PulseAudio">ArchLinux wiki page</a>
+and the corresponding
+<a href="https://wiki.archlinux.org/index.php/PulseAudio/Configuration">configuration</a>
+and
+<a href="https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting">troubleshooting</a>
+guide as well as the
+<a href="https://wiki.archlinux.org/index.php/PulseAudio/Examples">examples</a>.</p>
+
+<h1 id="the-jack-sound-server">The JACK sound server</h1>
+
+<p>The <a href="http://jackaudio.org/">Jack</a> sound server is the one of choice
+whenever you intend to establish a more sophisticated
+workflow. It handles the access of the sound card via
+<a href="https://en.wikipedia.org/wiki/Callback_(computer_programming)">callbacks</a>,
+what not just reduces the overall latency significantly but also
+ensures that all the different programs in your effect chain will be
+called in order and are synchronized. So you can e.g. set your
+recording application as time master and your drum sequencer as
+slave. This way you will have a drum playback whenever you start
+your recording session without integrating it into the recording
+program itself.</p>
+
+<p>One of the most convenient ways to <a href="http://libremusicproduction.com/articles/demystifying-jack-%E2%80%93-beginners-guide-getting-started-jack">configure
+JACK</a>
+is to use <a href="https://qjackctl.sourceforge.io/">QJackCtl</a> or as an
+alternative
+<a href="http://kxstudio.linuxaudio.org/Applications:Cadence">Cadence</a> and its
+siblings from the <a href="http://kxstudio.linuxaudio.org/">KXStudio</a>
+suite. For a more detailed configuration please have a look into the
+<a href="https://github.com/jackaudio/jackaudio.github.com/wiki">official
+wiki</a> or
+<a href="https://wiki.archlinux.org/index.php/JACK_Audio_Connection_Kit">ArchLinux&rsquo;s
+take</a>.</p>
+
+<p>A running JACK server does not necessarily return any audio. It
+instead serves as a convenience layer within your system all programs
+can both sent audio to and receive specific audio from. In other
+words: you can pipe the output of an arbitrary
+<a href="http://jackaudio.org/applications/">JACK-aware</a> application into
+another one. To establish those connections (between programs as well
+as to the system&rsquo;s sink and source) you can either use the connection
+manager of QJackCtl or an external one like
+<a href="http://drobilla.net/software/patchage">Patchage</a>. Worth mentioning in
+the context of the graphical configuration and controlling of you JACK
+server are also <a href="http://djcj.org/jackeq/">JackEQ</a>, <a href="http://jack-rack.sourceforge.net/">JACK
+Rack</a>, and the <a href="http://non.tuxfamily.org/session-manager/doc/MANUAL.html">Non Session
+Manager</a>.</p>
+
+<h1 id="the-interplay-between-pulseaudio-and-jack">The interplay between PulseAudio and JACK</h1>
+
+<p>Depending on your configuration at home you might find both the
+PulseAudio and JACK sound server attractive, each for a different
+scenario. Fortunately there are a number of options how those two can
+<a href="http://jackaudio.org/faq/pulseaudio_and_jack.html">play together</a>.</p>
+
+<p>I am for example using my laptop with an external USB sound card for
+recording audio. I do not really like the idea of using a JACK setup
+running after system startup with my external sound card as
+default. The moment the card is not attached to my laptop anymore I
+have reconfigure the setup manually. Instead I can recommend to use
+the 4th option: to suspend PulseAudio when one starts JACK to record
+some audio.</p>
+
+<p>In <em>Setting &gt; Server Prefix</em> in <em>QJackCtrl</em> enter <em>pasuspender &ndash;
+jack_control start</em>. Instead of the classical JACK daemon <em>jackd</em> this
+approach is using <a href="https://en.wikipedia.org/wiki/D-Bus">D-Bus</a> for a
+smoother
+<a href="https://github.com/jackaudio/jackaudio.github.com/wiki/JackDbusPackaging">transition</a>
+between JACK and PulseAudio. To also have a smooth transition back to
+PulseAudio you can use the <a href="https://github.com/theGreatWhiteShark/blog-resources/blob/master/music/recording-audio-using-Linux-systems-II/jack-shutdown-script.sh">following
+script</a>
+in Options &gt; Scripting &gt; Execute script after shutdown.</p>
+
+<p>Hint: the configuration file for <em>jackd</em> is located in <em>~/.jackdrc</em>
+and the corresponding one for <em>jackdbus</em> in
+<em>~/.config/jack/conf.xml</em>.</p>
+
+	  </section>
+
+
+	  <footer class="post-footer">
+
+
+	    
+
+
+
+
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://thegreatwhiteshark.github.io">Philipp Müller</a></h4>
+  
+  <p>Read <a href="https://thegreatwhiteshark.github.io">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://thegreatwhiteshark.github.io/">https://thegreatwhiteshark.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+	    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Recording%20audio%20using%20Linux%20systems%20Pt.%20II&nbsp;-&nbsp;theGreatWhiteShark&amp;url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2flinux-sound-server%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2flinux-sound-server%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2flinux-sound-server%2f&amp;description=Recording%20audio%20using%20Linux%20systems%20Pt.%20II"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fthegreatwhiteshark.github.io%2flinux-audio%2flinux-sound-server%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+	    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/linux-sound-server\/";  
+this.page.identifier = "https:\/\/thegreatwhiteshark.github.io\/linux-audio\/linux-sound-server\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://ladida.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+	  </footer>
+	</article>
+
+      </main>
+
+      
+      <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="/linux-audio/zynaddsubfx-with-tuxguitar/">
+          <section class="post">
+              <h2>Using ZynAddSubFx as sound synthesizer in TuxGuitar</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/linux-audio/recording-audio-using-linux-systems/">
+          <section class="post">
+              <h2>Recording audio using Linux systems Pt. I</h2>
+          </section>
+      </a>
+  
+</aside>
+
+      
+
+          <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">theGreatWhiteShark</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+

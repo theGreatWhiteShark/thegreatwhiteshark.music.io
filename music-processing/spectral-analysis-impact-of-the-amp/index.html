@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="What spectra do tell us"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="What spectra do tell us &middot; theGreatWhiteShark" />
+  	<meta property="og:site_name" content="theGreatWhiteShark" />
+  	<meta property="og:url" content="https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/" />
+
+    
+        
+            <meta property="og:image" content="/images/non-banner.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-12-10T18:00:00&#43;01:00" />
+
+    
+    <meta property="article:tag" content="music processing" />
+    
+    
+
+    <title>What spectra do tell us &middot; theGreatWhiteShark</title>
+
+    
+    <meta name="description" content="One of the most important tools in digital signal processing, if not THE most important one, is the spectral analysis. In this post I discuss what it might unve" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="theGreatWhiteShark" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.32.2" />
+
+    <link rel="canonical" href="https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://thegreatwhiteshark.github.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": What spectra do tell us,
+    "name": What spectra do tell us,
+    "wordCount": 986,
+    "timeRequired": "PT5M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/,
+    "datePublished": 2017-12-10T18:00Z,
+    "dateModified": 2017-12-10T18:00Z,
+    
+    "keywords": music processing,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            <h3>Topics</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="/linux-audio">Linux audio</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/music-processing">Music processing</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/recording">Recording</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/theGreatWhiteShark">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://thegreatwhiteshark.github.io/">Blogs</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About me</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+      <header class="main-header post-head no-cover">
+	<nav class="main-nav clearfix">
+	  
+
+	  
+	  
+	  <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+	  
+	</nav>
+      </header>
+
+
+
+      <main class="content" role="main">
+
+	<article class="post music-processing">
+
+	  <header class="post-header">
+	    <h1 class="post-title">What spectra do tell us</h1>
+	    
+	      <h2 class="post-subtitle">The impact of the amp and the microphone</h2>
+	    
+	    <small></small>
+
+            <section class="post-meta">
+              
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/tags/music-processing/">#music processing</a></span>
+              
+            </section>
+	  </header>
+
+	  <section class="post-content">
+	    
+
+<p>One of the most important tools in digital signal processing, if not
+THE most important one, is the spectral analysis. In this post I
+discuss what it might unveil about the recording procedure. Should I
+just use the line-out of my amp? Or better a microphone picking up the
+signal of the amp? Well, which microphone then? An old friend always
+told me a good sound has to travel through air at least once. I want
+to find out why.</p>
+
+<p>Of course I won&rsquo;t provide conclusive answers to those questions. In
+truth, this is just my first, humble attempt to grow accustom to my
+equipment and its peculiarities and frequency responses. But one
+purpose of this blog is to document my projects and the bottom line of
+all of this is of course: it&rsquo;s fun to dig into your music and audio
+signals using your computer. :)</p>
+
+<h1 id="equipment-and-software">Equipment and software</h1>
+
+<p>I will use the software presented in my <a href="/spectral-analysis-linux">last
+post</a> on spectral analysis. <strong>Brianalyse</strong>
+is used for the visualization and comparison of the spectra and
+<strong>Jaaa</strong> for obtaining an average of the individual spectra.</p>
+
+<p>For the recording procedure itself I&rsquo;ll use a BC Rich Stealth guitar,
+a Blackstar HT-5 combo valve amp, a Shure SM58 (coil microphone), and
+a Tascam TM-80 (condenser microphone). In addition I use a Tascam
+US-2x2 external sound card and Behringer MS40 speakers. Both the amp
+and the speakers are fixed in an (arbitrary) equalization setup.</p>
+
+<p>I decided not upload the corresponding sound files. It&rsquo;s 187 MB in
+total (uncompressed) and I don&rsquo;t want to spam my Git repository.</p>
+
+<h1 id="setup">Setup</h1>
+
+<p>The <strong>main objective</strong> is to determine the difference in the recording
+depending on whether or not it traveled through air.</p>
+
+<p>My <strong>hypotheses</strong> why this might be the case are the following (yes,
+I&rsquo;m a physicist :D):
+1. Due to the modulation caused by the master gain and the speaker of
+   the amplifier
+2. Due to the modulation caused by the microphone
+3. Due to the modulation caused by an arbitrary speaker</p>
+
+<p>To <strong>test these hypotheses</strong> (the corresponding one in brackets) I
+will record a piece of audio in several ways
+1. Record both the output of the amp using a microphone and the
+   line-out signal (1)
+2. Perform the first test using a different microphone (2)
+3. Capture the playback of the line-out signal using a microphone via
+   the monitors of my computer (3)</p>
+
+<p>Since the line-out signal is composed of the guitar signal + the
+modulation of the pre-amp + the equalization of the amplifier, it&rsquo;s an
+appropriate starting point. Using test number 1 and 3 I can compare
+two different sets of master gain and speaker modulation on the same
+signal (modulo the effect of analog-digital-analog conversion and the
+pre-amp of the external sound card for test 3).</p>
+
+<h1 id="results">Results</h1>
+
+<h3 id="impact-of-the-microphone">Impact of the microphone</h3>
+
+<p>First, let&rsquo;s have a look on what the microphone is doing with our
+signal.</p>
+
+<p><img src="/images/posts/2017/what-spectra-do-tell-us/amp-sm58-average.png" alt="amp+sm58" />
+<img src="/images/posts/2017/what-spectra-do-tell-us/amp-tm80-average.png" alt="amp+shure" /></p>
+
+<p>(The TM-80 channels have the wrong label <em>Shure</em> in them, sorry).</p>
+
+<p>In the top picture you can see the spectrum of the SM58 microphone
+picking up the audio signal of the amplifier (using the internal
+master gain and speaker). The bottom picture displays the same setup
+but using the TM-80 instead.</p>
+
+<p>The SM58 has a much bigger response in the high frequency band from
+7kHz till 11kHz resulting in a harsh sound. The TM-80, on the other
+hand, is boosting the lower and mid frequencies up to 3kHz and has a
+more round and warm sound.</p>
+
+<h3 id="impact-of-the-speaker">Impact of the speaker</h3>
+
+<p><img src="/images/posts/2017/what-spectra-do-tell-us/line-out-average.png" alt="line-out" />
+<img src="/images/posts/2017/what-spectra-do-tell-us/line-out-tm80-average.png" alt="line-out+speaker+shure" /></p>
+
+<p>In the two figures above you can see spectrum of the raw line-out
+signal (top) and the line-out signal played back using the Behringer
+monitors and captured using the TM-80 (bottom).</p>
+
+<p><img src="/images/posts/2017/what-spectra-do-tell-us/amp-tm80-average.png" alt="amp+shure" />
+<img src="/images/posts/2017/what-spectra-do-tell-us/tm80-double.png" alt="amp+shure+speaker+shure" /></p>
+
+<p>Those figures display the spectra of the amp captured by the TM-80
+(top) and this very signal again played back using the monitors and
+captured again using the TM-80 (bottom).</p>
+
+<p>By comparing the pure line-out signal with the one captured in front
+of the amp one can see quite beautifully how much character in the
+frequency range between 4kHz and 12kHz is introduced by the master
+gain and the speaker of the amplifier.</p>
+
+<p>On the other hand, by comparing the latter signal or the line-out with
+the one obtained by capturing the playback of the line-out it is also
+obvious how brutally my monitors just cuts off the signal at 7kHz,
+damps the whole mid range, and boosts the lower one. With its bass and
+treble settings being both set to default I&rsquo;m quite puzzled about this
+behaviour. Hmm&hellip; I wasn&rsquo;t aware of this and definitely have to look
+into this matter in more detail.</p>
+
+<p>Last, we compare the captured signal of the amplifier with the same
+signal played back through the monitors and recaptured again. My hope
+was to separate the modulation introduced by the microphone and the
+one introduced by the speaker. Some of the peaks in the spectrum are
+definitely enhanced in the recaptured signal and a ugly resonance was
+introduced in the very low frequencies (even worse for the SM58). But
+in the end these two modulations are way to convoluted to keep them
+apart.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>So, is there a good reason to invest in a combo amp or a head-box
+combination instead of using just a rack amplifier? Yes, there is.</p>
+
+<p>The master gain and speaker of the box are introducing a lot of energy
+in the mid and high frequency range. This gives the signal more warmth
+and definition. The choice of the microphone does, of course, also
+matter. But the latter is just introducing a colouring and is not as
+important as the amp itself.</p>
+
+<p>Another thing I&rsquo;ve learned is, that the monitors I use with my
+computer have a quite odd frequency range with a lot of damping in the
+mids and a cut-off at 7kHz. (Or is some software component responsible
+for this behaviour?) So it&rsquo;s definitely worth checking out one&rsquo;s
+equipment properly.</p>
+
+	  </section>
+
+
+	  <footer class="post-footer">
+
+
+	    
+
+
+
+
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://thegreatwhiteshark.github.io">Philipp Müller</a></h4>
+  
+  <p>Read <a href="https://thegreatwhiteshark.github.io">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    
+    <span class="author-link icon-link"><a href="https://thegreatwhiteshark.github.io/">https://thegreatwhiteshark.github.io/</a></span>
+  </div>
+</section>
+
+
+
+
+	    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=What%20spectra%20do%20tell%20us&nbsp;-&nbsp;theGreatWhiteShark&amp;url=https%3a%2f%2fthegreatwhiteshark.github.io%2fmusic-processing%2fspectral-analysis-impact-of-the-amp%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fthegreatwhiteshark.github.io%2fmusic-processing%2fspectral-analysis-impact-of-the-amp%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fthegreatwhiteshark.github.io%2fmusic-processing%2fspectral-analysis-impact-of-the-amp%2f&amp;description=What%20spectra%20do%20tell%20us"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fthegreatwhiteshark.github.io%2fmusic-processing%2fspectral-analysis-impact-of-the-amp%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+	    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/thegreatwhiteshark.github.io\/music-processing\/spectral-analysis-impact-of-the-amp\/";  
+this.page.identifier = "https:\/\/thegreatwhiteshark.github.io\/music-processing\/spectral-analysis-impact-of-the-amp\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://ladida.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+	  </footer>
+	</article>
+
+      </main>
+
+      
+      <aside class="read-next">
+  
+  
+</aside>
+
+      
+
+          <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">theGreatWhiteShark</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+

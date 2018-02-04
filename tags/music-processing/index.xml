@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music Processing on theGreatWhiteShark</title>
+    <link>https://thegreatwhiteshark.github.io/tags/music-processing/</link>
+    <description>Recent content in Music Processing on theGreatWhiteShark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Dec 2017 18:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://thegreatwhiteshark.github.io/tags/music-processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What spectra do tell us</title>
+      <link>https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/</link>
+      <pubDate>Sun, 10 Dec 2017 18:00:00 +0100</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/music-processing/spectral-analysis-impact-of-the-amp/</guid>
+      <description>One of the most important tools in digital signal processing, if not THE most important one, is the spectral analysis. In this post I discuss what it might unveil about the recording procedure. Should I just use the line-out of my amp? Or better a microphone picking up the signal of the amp? Well, which microphone then? An old friend always told me a good sound has to travel through air at least once.</description>
+    </item>
+    
+    <item>
+      <title>Spectral analysis</title>
+      <link>https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/</link>
+      <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/linux-audio/spectral-analysis-linux/</guid>
+      <description>A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Audacity already can handle it. So let&amp;rsquo;s use it with Non Timeline or a general JACK-based environment too.
+In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them. I will not write about the Fourier transform and spectra in general.</description>
+    </item>
+    
+  </channel>
+</rss>
