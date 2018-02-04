@@ -41,7 +41,7 @@ For the sake of reproducibility I will use a [gong sample](http://freewavesample
 track using the *a* key, click at the
 track using your right mouse key, and select *Import source at mouse*. 
 
-![picture Non Timeline loop](/images/posts/2017/spectral-analysis/non-timeline-setup.jpeg)
+![picture Non Timeline loop](/static/images/posts/2017/spectral-analysis/non-timeline-setup.jpeg)
 
 Since we want to play this little example over and over again for the
 spectral analysis, we have to define a **loop over the whole
@@ -55,7 +55,7 @@ you start the playback using *Space* the sample is played over an over
 again. (Just using the keyboard and almost without any mouse
 interaction. Isn't that awesome?)
 
-![Picture connections](/images/posts/2017/spectral-analysis/connection-setup.png)
+![Picture connections](/static/images/posts/2017/spectral-analysis/connection-setup.png)
 
 In order to actually **hear the output** of Non Timeline, you have to
 connect it with the playback of the system (e.g. using the *Connect*
@@ -69,7 +69,7 @@ covered in the remainder of the post.
 Audio Analyser) is a very simple program to visualize the spectrum of
 sound piped into it.
 
-![Jaaa picture](/images/posts/2017/spectral-analysis/jaaa.png)
+![Jaaa picture](/static/images/posts/2017/spectral-analysis/jaaa.png)
 
 To start it with JACK support, use the following command in your bash
 shell 
@@ -88,7 +88,7 @@ jaaa -J &
 [Brianalyse](http://humanleg.org.uk/code/brianalyze/) is a nice little
 piece of software quite similar to Jaaa. 
 
-![Brianalyse](/images/posts/2017/spectral-analysis/brianalyse.png)
+![Brianalyse](/static/images/posts/2017/spectral-analysis/brianalyse.png)
 
 + Can display a arbitrary amount of different signals/channels
 + Both the frequency and amplitude axes can be scaled linear or
@@ -111,14 +111,14 @@ details of your signals than the previous ones.
 But the software is **NOT open source** but free. You can download
 binaries at their [homepage](http://www.baudline.com/download.html).
 
-![Baudline](/images/posts/2017/spectral-analysis/baudline-basic.jpeg)
+![Baudline](/static/images/posts/2017/spectral-analysis/baudline-basic.jpeg)
 
 It supports different kinds of Fourier transforms,
 different window types and sizes, and even enables you to perform
 mathematical operations of the different channels and transforms or to
 calculate their auto- or cross-correlation.
 
-![Baudline extended](/images/posts/2017/spectral-analysis/baudline-advanced.jpeg)
+![Baudline extended](/static/images/posts/2017/spectral-analysis/baudline-advanced.jpeg)
 
 + Spectrogram
 + Customizable Visualization
@@ -133,7 +133,7 @@ If you are interested in the spectra of audio but do not want to
 use the JACK system, you'll find in [Spek](http://spek.cc/) and [Sonic Visualizer](http://www.sonicvisualiser.org/) some
 alternatives working on files instead of audio streams.
 
-![Spek](/images/posts/2017/spectral-analysis/spek.jpeg)
+![Spek](/static/images/posts/2017/spectral-analysis/spek.jpeg)
 
 Spek itself is quite minimalist. But it works. For a more thorough
 analysis you might want to use the more sophisticated Sonic Visualizer

@@ -71,7 +71,7 @@ let's continue with the actual Linux sound servers.
 
 # Overall structure of the Linux sound servers and basic ALSA commands
 
-![sketch of the Linux sound server](/images/posts/2017/linux-sound-systems/Linux-sound-server-sketch.svg)
+![sketch of the Linux sound server](/static/images/posts/2017/linux-sound-systems/Linux-sound-server-sketch.svg)
 
 While the [ALSA](http://www.alsa-project.org/main/index.php/Main_Page)
 package serves as a bridge to the hardware we will actually use two

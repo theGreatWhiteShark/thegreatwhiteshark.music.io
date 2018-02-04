@@ -278,7 +278,7 @@ sound card (in case you have more than one) with both Pavucontrol and
 Audacity. They will interfere with each other and you most probably
 end up with no input/output signal in Audacity.
 
-![image pavucontrol](/images/posts/2017/recording-audio-using-linux-systems/pavucontrol.png)
+![image pavucontrol](/static/images/posts/2017/recording-audio-using-linux-systems/pavucontrol.png)
 
 Also check out **pasystray** to control PulseAudio via a small icon in
 your status bar and **paprefs** if you want to use it via your local
@@ -294,7 +294,7 @@ it's not intended to be used with wireless connections.
 
 ## Audacity
 
-![image audacity](/images/posts/2017/recording-audio-using-linux-systems/audacity-linux.png)
+![image audacity](/static/images/posts/2017/recording-audio-using-linux-systems/audacity-linux.png)
 
 [Audacity](http://www.audacityteam.org/) is a full-fledged recording
 software allowing you record audio and mix the results. It features a
@@ -325,7 +325,7 @@ than you actually think. Just give it a shot. ;)
 
 ## LMMS
 
-![image lmms](/images/posts/2017/recording-audio-using-linux-systems/lmms.png)
+![image lmms](/static/images/posts/2017/recording-audio-using-linux-systems/lmms.png)
 
 What's Audacity for working with sound signals (e.g. an amplified
 guitar) is [LMMS](https://lmms.io/) for working with MIDI sounds. It
@@ -374,7 +374,7 @@ For both steps there are a number of programs solving the task. But I
 would recommend [QJackCtl](https://qjackctl.sourceforge.io/), which
 can handle both of them.
 
-![image qjackctl](/images/posts/2017/recording-audio-using-linux-systems/qjackctlMainForm1.png)
+![image qjackctl](/static/images/posts/2017/recording-audio-using-linux-systems/qjackctlMainForm1.png)
 
 To connect the output of one app with the input of another, just press
 the *Connect* button and draw a line between the two nodes by hand. 
@@ -394,26 +394,26 @@ applications.
 
 #### [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline)
 
-![image non-timeline](/images/posts/2017/recording-audio-using-linux-systems/non-timeline.png)
+![image non-timeline](/static/images/posts/2017/recording-audio-using-linux-systems/non-timeline.png)
  
 For recording and editing audio.
 
 #### [Non Sequencer](http://non.tuxfamily.org/wiki/Non%20Sequencer)
 
-![image non-sequencer](/images/posts/2017/recording-audio-using-linux-systems/non-sequencer.png)
+![image non-sequencer](/static/images/posts/2017/recording-audio-using-linux-systems/non-sequencer.png)
 
 For sequencing and synthesizing MIDI sounds.
 
 #### [Non Mixer](http://non.tuxfamily.org/wiki/Non%20Mixer)
 
-![image non-mixer](/images/posts/2017/recording-audio-using-linux-systems/non-mixer.png)
+![image non-mixer](/static/images/posts/2017/recording-audio-using-linux-systems/non-mixer.png)
 
 For mixing different audio tracks (recorded in e.g. Non Timeline or
 Non Sequencer) and applying effects like LADSPA to them.
 
 #### [Non Session Manager](http://non.tuxfamily.org/wiki/Non%20Session%20Manager)
 
-![image non-session](/images/posts/2017/recording-audio-using-linux-systems/non-session.png)
+![image non-session](/static/images/posts/2017/recording-audio-using-linux-systems/non-session.png)
 
 To control and restore your recording session.
 
@@ -431,7 +431,7 @@ distributions. Don't know)
 
 ## Ardour
 
-![image ardour](/images/posts/2017/recording-audio-using-linux-systems/ardour.png)
+![image ardour](/static/images/posts/2017/recording-audio-using-linux-systems/ardour.png)
 
 An alternative to the Non suite is [Ardour](https://ardour.org/). For
 a JACK-based application it is quite user friendly since it takes care
@@ -446,7 +446,7 @@ better entry point into the JACK-based world of audio processing.
 
 ## Hydrogen
 
-![image hydrogen](/images/posts/2017/recording-audio-using-linux-systems/hydrogen.png)
+![image hydrogen](/static/images/posts/2017/recording-audio-using-linux-systems/hydrogen.png)
 
 Whenever you want to make some artificial drums along with your music,
 I would recommend the usage of
@@ -464,7 +464,7 @@ your MIDI drum track.
 
 ## TuxGuitar
 
-![image tuxguitar](/images/posts/2017/recording-audio-using-linux-systems/tuxguitar.jpeg)
+![image tuxguitar](/static/images/posts/2017/recording-audio-using-linux-systems/tuxguitar.jpeg)
 
 [TuxGuitar](https://sourceforge.net/projects/tuxguitar/) is the
 open-source alternative to GuitarPro and an awesome way of noting down

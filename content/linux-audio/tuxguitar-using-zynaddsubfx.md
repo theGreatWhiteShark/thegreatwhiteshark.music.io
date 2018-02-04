@@ -21,7 +21,7 @@ setup.
 
 # TuxGuitar configuration
 
-![TuxGuitar-configuration](/images/posts/2017/tuxguitar-using-zynaddsubfx/tuxguitar-configuration.jpeg)
+![TuxGuitar-configuration](/static/images/posts/2017/tuxguitar-using-zynaddsubfx/tuxguitar-configuration.jpeg)
 
 It's fairly simple. Just start
 [ZynAddSubFX](http://zynaddsubfx.sourceforge.net/) and TuxGuitar right
@@ -33,7 +33,7 @@ seamlessly from now on.
 
 # ZynAddSubFX configuration
 
-![ZynAddSubFX-configuration](/images/posts/2017/tuxguitar-using-zynaddsubfx/zynaddsubfx-configuration.jpeg)
+![ZynAddSubFX-configuration](/static/images/posts/2017/tuxguitar-using-zynaddsubfx/zynaddsubfx-configuration.jpeg)
 
 But to generate sounds using ZynAddSubFX you have to select an
 instrument first. (Or you can build your own using the provided effect
@@ -44,7 +44,7 @@ to go.
 
 # JACK configuration
 
-![JACK-configuration](/images/posts/2017/tuxguitar-using-zynaddsubfx/zynaddsubfx-configuration.jpeg)
+![JACK-configuration](/static/images/posts/2017/tuxguitar-using-zynaddsubfx/zynaddsubfx-configuration.jpeg)
 
 If you are using **JACK** click the **Connect** button in
 [QjackCtl](https://qjackctl.sourceforge.io/) (or your preferred

@@ -26,8 +26,4 @@ script:
 - hugo
 after_success:
 - "./_deploy_script.sh"
-deploy:
-  provider: pages
-  target_branch: gh-pages
-  on:
-    branch: master
+deploy: true
