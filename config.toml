@@ -48,7 +48,6 @@ url = "/about"
 weight = 80
 
 [params]
-author = "Philipp Müller"
 authorwebsite = "https://thegreatwhiteshark.github.io/"
 cover = "images/non-banner.png"
 email = "thetruephil@googlemail.com"
