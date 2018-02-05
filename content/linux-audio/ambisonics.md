@@ -6,6 +6,8 @@ tags = ["Linux", "music processing"]
 title = "Spatialization using Ambisonics in Linux"
 type = "post"
 slug = "ambisonics"
+description = "work in progress..."
+
 +++
 
 - the overall concept

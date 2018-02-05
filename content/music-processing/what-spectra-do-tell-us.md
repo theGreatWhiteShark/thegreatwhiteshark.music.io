@@ -7,15 +7,9 @@ title = "What spectra do tell us"
 subtitle = "The impact of the amp and the microphone"
 type = "post"
 slug = "spectral-analysis-impact-of-the-amp"
-+++
+description = "One of the most important tools in digital signal processing, if not *THE* most important one, is the spectral analysis. In this post I discuss what it might unveil about the recording procedure. Should I just use the line-out of my amp? Or better a microphone picking up the signal of the amp? Well, which microphone then? An old friend always told me a good sound has to travel through air at least once. I want to find out why."
 
-One of the most important tools in digital signal processing, if not
-THE most important one, is the spectral analysis. In this post I
-discuss what it might unveil about the recording procedure. Should I
-just use the line-out of my amp? Or better a microphone picking up the
-signal of the amp? Well, which microphone then? An old friend always
-told me a good sound has to travel through air at least once. I want
-to find out why. 
++++
 
 Of course I won't provide conclusive answers to those questions. In
 truth, this is just my first, humble attempt to grow accustom to my

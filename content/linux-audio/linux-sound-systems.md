@@ -7,21 +7,14 @@ title = "Recording audio using Linux systems Pt. II"
 subtitle = "The Linux sound servers"
 type = "post"
 slug = "linux-sound-server"
+description = "As for most other Linux subsystems the audio one grew naturally too. So you have quite a number of alternatives and different ways to achieve a goal. Not just in using different software, but also in the underlying sound servers. While this grants advanced users quite some flexibility, it's almost threatening for beginners. That's why the overall goal of this post is to provide you with a bigger picture of the main Linux sound servers."
 
 +++
 
 After we got an overview about the peculiarities of the Linux system
 with respect to audio and recording  in the [last
 post](recording-audio-using-linux-systems) we will dive some more into
-the Linux sound system itself.
-
-As for most other Linux subsystems the audio one grew quite naturally
-too. So you have quite a number of alternatives and different ways to
-achieve a goal. Not just in using different software, but also in the
-underlying sound servers. While this grants advanced users quite some
-flexibility, it's almost threatening for beginners. That's why the overall
-goal of this post is to provide you with a bigger picture of the main
-Linux sound servers. If you do not understand every last bit of
+the Linux sound system itself. If you do not understand every last bit of
 information in here, don't worry.
 
 # The Linux way of handling hardware

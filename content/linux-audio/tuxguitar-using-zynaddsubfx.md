@@ -6,18 +6,9 @@ tags = ["Linux", "emulation"]
 title = "Using ZynAddSubFx as sound synthesizer in TuxGuitar"
 type = "post"
 slug = "zynaddsubfx-with-tuxguitar"
+description = "Although not as good as the original GuitarPro, I really like [TuxGuitar](https://sourceforge.net/projects/tuxguitar/). After all, it is the only usable software to produce guitar tabs and scores in Linux systems I'm aware of. But of all its shortcomings the issues I had with its sound system were the worst: The sound generation is broken quite frequently and the whole program remains silent. In this short post I'll explain to you how to replace the internal sound generator of TuxGuitar with ZynAddSubFX for a more stable and reliable setup."
 
 +++
-
-Although not as good as the original GuitarPro, I really like
-[TuxGuitar](https://sourceforge.net/projects/tuxguitar/). After all,
-it is the only usable software to produce guitar tabs and scores in
-Linux systems I'm aware of. But of all its shortcomings the issues I
-had with its sound system were the worst: The sound generation is
-broken quite frequently and the whole program remains silent. In this
-short post I'll explain to you how to replace the internal sound
-generator of TuxGuitar with ZynAddSubFX for a more stable and reliable
-setup. 
 
 # TuxGuitar configuration
 

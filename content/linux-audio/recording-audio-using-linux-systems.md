@@ -4,19 +4,12 @@ draft = false
 tags = ["recording", "non", "Linux"]
 title = "Recording audio using Linux systems Pt. I"
 subtitle = "General concepts, applications, and workflow"
-description = "A thorough introduction of how to recording audio only using open source and free software"
 slug = "recording-audio-using-linux-systems"
 type = "post"
 comment = true
-+++
+description = "As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software."
 
-As much as I love the Linux system, its incredible amount of free and
-open-source software and distributions, and the whole supportive
-community providing awesome documentation etc., the much pain it was
-to migrate all my music recording and mixing from Windows to Linux. It
-cost me numerous sleepless nights and
-resulted in some quite discouraging failures during my first year of
-diving into open-source.
++++
 
 The reason I had a hard time back then was not a lack of good
 documentation or badly implemented software. No, quite the

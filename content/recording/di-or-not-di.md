@@ -7,10 +7,9 @@ title = "Recording using DI-Boxes"
 subtitle = "Export home studio to real one"
 slug = "di-or-not-di"
 type = "post"
+description = "Work in progress..."
 
 +++
-
-Work in progress...
 
 # Benefit
 

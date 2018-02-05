@@ -7,23 +7,13 @@ title = "Spectral analysis"
 subtitle = "Real-time spectral analysis in Linux using JACK"
 type = "post"
 slug = "spectral-analysis-linux"
+description = "A very important part of digital signal processing (DSP) as well as music processing is to analyze the [spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your recording. Even Audacity already can [handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So let's use it with [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general [JACK](http://jackaudio.org/)-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them."
+
 +++
 
-A very important part of digital signal processing (DSP) as well as
-music processing is to analyze the
-[spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the
-[spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your
-recording. Even Audacity already can
-[handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So
-let's use it with [Non
-Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general
-[JACK](http://jackaudio.org/)-based environment too.
-
-In this blog post I will review the available software for creating
-spectra in Linux systems and how to deploy them. I will not write
-about the Fourier transform and spectra in general. For a very nice
-and gentle introduction I can recommend the second
-chapter of [Fundamentals of Music
+As a disclaimer: I will not write about the Fourier transform and
+spectra in general. For a very nice and gentle introduction I can
+recommend the second chapter of [Fundamentals of Music
 Processing](https://www.springer.com/us/book/9783319219448) by Meinard
 Müller. 
 
