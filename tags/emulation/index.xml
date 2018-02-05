@@ -17,7 +17,8 @@
       <pubDate>Sun, 26 Nov 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/</guid>
-      <description>Although not as good as the original GuitarPro, I really like TuxGuitar. After all, it is the only usable software to produce guitar tabs and scores in Linux systems I&amp;rsquo;m aware of. But of all its shortcomings the issues I had with its sound system were the worst: The sound generation is broken quite frequently and the whole program remains silent. In this short post I&amp;rsquo;ll explain to you how to replace the internal sound generator of TuxGuitar with ZynAddSubFX for a more stable and reliable setup.</description>
+      <description>TuxGuitar configuration It&amp;rsquo;s fairly simple. Just start ZynAddSubFX and TuxGuitar right after each other. Now in TuxGuitar head to the menu entry Tools &amp;gt; Settings and choose the bottom tab Sound. As MIDI Sequencer choose TuxGuitar Sequencer and as MIDI Port choose ZynAddSubFX. This will wire up both programs and you can use them seamlessly from now on.
+ZynAddSubFX configuration But to generate sounds using ZynAddSubFX you have to select an instrument first.</description>
     </item>
     
   </channel>

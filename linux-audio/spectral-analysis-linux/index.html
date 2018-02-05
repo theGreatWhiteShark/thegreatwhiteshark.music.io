@@ -13,12 +13,12 @@
 
 
 <meta name="twitter:title" content="Spectral analysis"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="A very important part of digital signal processing (DSP) as well as music processing is to analyze the [spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your recording. Even Audacity already can [handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So let&#39;s use it with [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general [JACK](http://jackaudio.org/)-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them."/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Spectral analysis &middot; theGreatWhiteShark" />
+  	<meta property="og:title" content="Spectral analysis" />
   	<meta property="og:site_name" content="theGreatWhiteShark" />
   	<meta property="og:url" content="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/" />
 
@@ -29,7 +29,7 @@
     
 
     
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="A very important part of digital signal processing (DSP) as well as music processing is to analyze the [spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your recording. Even Audacity already can [handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So let&#39;s use it with [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general [JACK](http://jackaudio.org/)-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them." />
   	<meta property="og:type" content="article" />
     <meta property="article:published_time" content="2017-12-03T18:00:00&#43;01:00" />
 
@@ -42,10 +42,10 @@
     
     
 
-    <title>Spectral analysis &middot; theGreatWhiteShark</title>
+    <title>Spectral analysis</title>
 
     
-    <meta name="description" content="A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Auda" />
+    <meta name="description" content="A very important part of digital signal processing (DSP) as well as music processing is to analyze the [spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your recording. Even Audacity already can [handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So let&#39;s use it with [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general [JACK](http://jackaudio.org/)-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them." />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -101,8 +101,8 @@
     },
     "headline": Spectral analysis,
     "name": Spectral analysis,
-    "wordCount": 855,
-    "timeRequired": "PT5M",
+    "wordCount": 793,
+    "timeRequired": "PT4M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
@@ -112,7 +112,7 @@
     "dateModified": 2017-12-03T18:00Z,
     
     "keywords": Linux, music processing, spectra,
-    "description": ,
+    "description": A very important part of digital signal processing (DSP) as well as music processing is to analyze the [spectrum](https://en.wikipedia.org/wiki/Spectral_density) and the [spectrogram](https://en.wikipedia.org/wiki/Spectrogram) of your recording. Even Audacity already can [handle](http://manual.audacityteam.org/man/plot_spectrum.html) it. So let&#39;s use it with [Non Timeline](http://non.tuxfamily.org/wiki/Non%20Timeline) or a general [JACK](http://jackaudio.org/)-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them.,
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/
@@ -208,10 +208,13 @@
 	  <header class="post-header">
 	    <h1 class="post-title">Spectral analysis</h1>
 	    
-	      <h2 class="post-subtitle">Real-time spectral analysis in Linux using JACK</h2>
+	      <h3 class="post-subtitle">Real-time spectral analysis in Linux using JACK</h3>
 	    
-	    <small></small>
-
+	    <hr class="post-description-separator"/>
+	    <section class="post-description-single">  
+	      <p>A very important part of digital signal processing (DSP) as well as music processing is to analyze the <a href="https://en.wikipedia.org/wiki/Spectral_density">spectrum</a> and the <a href="https://en.wikipedia.org/wiki/Spectrogram">spectrogram</a> of your recording. Even Audacity already can <a href="http://manual.audacityteam.org/man/plot_spectrum.html">handle</a> it. So let&rsquo;s use it with <a href="http://non.tuxfamily.org/wiki/Non%20Timeline">Non Timeline</a> or a general <a href="http://jackaudio.org/">JACK</a>-based environment too. In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them.
+	    </section>
+	    <hr class="post-description-separator"/>
             <section class="post-meta">
               
               
@@ -227,21 +230,9 @@
 	  <section class="post-content">
 	    
 
-<p>A very important part of digital signal processing (DSP) as well as
-music processing is to analyze the
-<a href="https://en.wikipedia.org/wiki/Spectral_density">spectrum</a> and the
-<a href="https://en.wikipedia.org/wiki/Spectrogram">spectrogram</a> of your
-recording. Even Audacity already can
-<a href="http://manual.audacityteam.org/man/plot_spectrum.html">handle</a> it. So
-let&rsquo;s use it with <a href="http://non.tuxfamily.org/wiki/Non%20Timeline">Non
-Timeline</a> or a general
-<a href="http://jackaudio.org/">JACK</a>-based environment too.</p>
-
-<p>In this blog post I will review the available software for creating
-spectra in Linux systems and how to deploy them. I will not write
-about the Fourier transform and spectra in general. For a very nice
-and gentle introduction I can recommend the second
-chapter of <a href="https://www.springer.com/us/book/9783319219448">Fundamentals of Music
+<p>As a disclaimer: I will not write about the Fourier transform and
+spectra in general. For a very nice and gentle introduction I can
+recommend the second chapter of <a href="https://www.springer.com/us/book/9783319219448">Fundamentals of Music
 Processing</a> by Meinard
 Müller.</p>
 
@@ -291,10 +282,7 @@ sound piped into it.</p>
 
 <p>To start it with JACK support, use the following command in your bash
 shell</p>
-
-<pre><code class="language-bash">jaaa -J &amp;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">jaaa -J &amp;</code></pre></div>
 <ul>
 <li>Its binary is available in the distributions repositories</li>
 <li>Quite a number of options to adjust the visualization</li>
@@ -461,11 +449,12 @@ s.setAttribute('data-timestamp', +new Date());
       <aside class="read-next">
   
   
-      <a class="read-next-story prev" style="no-cover" href="/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/">
-          <section class="post">
-              <h2>Using ZynAddSubFx as sound synthesizer in TuxGuitar</h2>
-          </section>
-      </a>
+  <a class="read-next-story prev" style="no-cover" href="/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/">
+    <section class="post">
+      <h2>Using ZynAddSubFx as sound synthesizer in TuxGuitar</h2>
+      
+    </section>
+  </a>
   
 </aside>
 

@@ -1,5 +1,9 @@
 // Custom colors
 $link-color: #0366d6;
+$color-title: #111;
+$color-subtitle: #444;
+$color-title-read-next: #fff;
+$color-subtitle-read-next: #ccc;
 
 // Highlight the links in the posts using a different color.
 .post {
@@ -18,14 +22,67 @@ $link-color: #0366d6;
 }
 
 .content .post-header {
+  // The first two are used in the single pages
   h1 {
-    font-size: 6rem !important;
+    font-size: 5.2rem !important;
     text-align: center;
-    color: #000;
+    color: $color-title;
   }
-  h2 {
+  h3 {
     font-size: 3.2rem !important;
     text-align: center;
-    color: #333;
+    color: $color-subtitle;
   }
+  // The next second ones are used within lists
+  h2 {
+    font-size: 3.6rem !important;
+    text-align: center;
+    a {
+      color: $color-title;
+    }
+  }
+  h4 {
+    font-size: 2.5rem !important;
+    text-align: center;
+    margin: -0.2em 0px 1em 0px;
+    a {
+      text-decoration: unset;
+      color: $color-subtitle;
+    }
+  }
+
+  // A horizontal line separating the description from the title and the
+  // content.
+  hr {
+    margin: 0px 0px 0.9em 0px;
+    border-top: #eee 1px solid;
+  }
+}
+ 
+.post-description-single {
+  font-size: 85% !important;
+  text-align: center;
+  p {
+    margin: 0px 0px 0.9em 0px;
+  }
+}
+
+// Customize the suggestion right above the footer
+.read-next {
+  h2 {
+    font-size: 3.6rem !important;
+    text-align: center;
+    color: $color-title-read-next;
+  }
+  h4 {
+    font-size: 2.5rem !important;
+    text-align: center;
+    color: $color-subtitle-read-next;
+  }
+}
+
+// Customizing the share buttons under the content and above the
+// Disqus comment line
+.post-footer .share {
+  position: relative;
 }

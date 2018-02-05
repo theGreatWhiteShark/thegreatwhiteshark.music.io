@@ -13,12 +13,12 @@
 
 
 <meta name="twitter:title" content="Recording audio using Linux systems Pt. I"/>
-<meta name="twitter:description" content="A thorough introduction of how to recording audio only using open source and free software"/>
+<meta name="twitter:description" content="As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software."/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Recording audio using Linux systems Pt. I &middot; theGreatWhiteShark" />
+  	<meta property="og:title" content="Recording audio using Linux systems Pt. I" />
   	<meta property="og:site_name" content="theGreatWhiteShark" />
   	<meta property="og:url" content="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/recording-audio-using-linux-systems/" />
 
@@ -29,7 +29,7 @@
     
 
     
-    <meta property="og:description" content="A thorough introduction of how to recording audio only using open source and free software" />
+    <meta property="og:description" content="As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software." />
   	<meta property="og:type" content="article" />
     <meta property="article:published_time" content="2017-08-06T18:00:00&#43;02:00" />
 
@@ -42,10 +42,10 @@
     
     
 
-    <title>Recording audio using Linux systems Pt. I &middot; theGreatWhiteShark</title>
+    <title>Recording audio using Linux systems Pt. I</title>
 
     
-    <meta name="description" content="A thorough introduction of how to recording audio only using open source and free software" />
+    <meta name="description" content="As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software." />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -101,8 +101,8 @@
     },
     "headline": Recording audio using Linux systems Pt. I,
     "name": Recording audio using Linux systems Pt. I,
-    "wordCount": 3859,
-    "timeRequired": "PT19M",
+    "wordCount": 3794,
+    "timeRequired": "PT18M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
@@ -112,7 +112,7 @@
     "dateModified": 2017-08-06T18:00Z,
     
     "keywords": recording, non, Linux,
-    "description": A thorough introduction of how to recording audio only using open source and free software,
+    "description": As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software.,
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/recording-audio-using-linux-systems/
@@ -208,10 +208,13 @@
 	  <header class="post-header">
 	    <h1 class="post-title">Recording audio using Linux systems Pt. I</h1>
 	    
-	      <h2 class="post-subtitle">General concepts, applications, and workflow</h2>
+	      <h3 class="post-subtitle">General concepts, applications, and workflow</h3>
 	    
-	    <small>A thorough introduction of how to recording audio only using open source and free software</small>
-
+	    <hr class="post-description-separator"/>
+	    <section class="post-description-single">  
+	      <p>As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., as much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first years of diving into open-source. In this post I want to provide a general overview about the landscape of Linux audio in both basic concepts and available software.
+	    </section>
+	    <hr class="post-description-separator"/>
             <section class="post-meta">
               
               
@@ -226,14 +229,6 @@
 
 	  <section class="post-content">
 	    
-
-<p>As much as I love the Linux system, its incredible amount of free and
-open-source software and distributions, and the whole supportive
-community providing awesome documentation etc., the much pain it was
-to migrate all my music recording and mixing from Windows to Linux. It
-cost me numerous sleepless nights and
-resulted in some quite discouraging failures during my first year of
-diving into open-source.</p>
 
 <p>The reason I had a hard time back then was not a lack of good
 documentation or badly implemented software. No, quite the
@@ -359,10 +354,7 @@ companies, but your personal laptop with just one configured user
 account too. Just enter the following command into your
 <a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29">Bash</a> to list
 all available users on your system.</p>
-
-<pre><code class="language-bash">cat /etc/passwd
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /etc/passwd</code></pre></div>
 <p>Next to your actual user and root there are many system services, like
 <em>lp</em> for printing or <em>lightdm</em> for handling your graphical desktop,
 having an user account by themselves. This is done by Linux in order
@@ -874,12 +866,15 @@ s.setAttribute('data-timestamp', +new Date());
       
       <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/thegreatwhiteshark.music.io/linux-audio/linux-sound-server/">
-          <section class="post">
-              <h2>Recording audio using Linux systems Pt. II</h2>
-              
-          </section>
-      </a>
+  <a class="read-next-story" style="no-cover" href="/thegreatwhiteshark.music.io/linux-audio/linux-sound-server/">
+    <section class="post">
+      <h2>Recording audio using Linux systems Pt. II</h2>
+      
+        <h4>The Linux sound servers</h4>
+      
+      
+    </section>
+  </a>
   
   
 </aside>

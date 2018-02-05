@@ -17,8 +17,9 @@
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/</guid>
-      <description>A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Audacity already can handle it. So let&amp;rsquo;s use it with Non Timeline or a general JACK-based environment too.
-In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them. I will not write about the Fourier transform and spectra in general.</description>
+      <description>As a disclaimer: I will not write about the Fourier transform and spectra in general. For a very nice and gentle introduction I can recommend the second chapter of Fundamentals of Music Processing by Meinard Müller.
+Setup As a prerequisite I assume you have the Non DAW Suite installed and JACK configured on your system. Now, power up JACK (e.g. via QjackCtl) and open Non Timeline.
+For the sake of reproducibility I will use a gong sample provided by freewavesamples.</description>
     </item>
     
     <item>
@@ -27,7 +28,8 @@ In this blog post I will review the available software for creating spectra in L
       <pubDate>Sun, 26 Nov 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/zynaddsubfx-with-tuxguitar/</guid>
-      <description>Although not as good as the original GuitarPro, I really like TuxGuitar. After all, it is the only usable software to produce guitar tabs and scores in Linux systems I&amp;rsquo;m aware of. But of all its shortcomings the issues I had with its sound system were the worst: The sound generation is broken quite frequently and the whole program remains silent. In this short post I&amp;rsquo;ll explain to you how to replace the internal sound generator of TuxGuitar with ZynAddSubFX for a more stable and reliable setup.</description>
+      <description>TuxGuitar configuration It&amp;rsquo;s fairly simple. Just start ZynAddSubFX and TuxGuitar right after each other. Now in TuxGuitar head to the menu entry Tools &amp;gt; Settings and choose the bottom tab Sound. As MIDI Sequencer choose TuxGuitar Sequencer and as MIDI Port choose ZynAddSubFX. This will wire up both programs and you can use them seamlessly from now on.
+ZynAddSubFX configuration But to generate sounds using ZynAddSubFX you have to select an instrument first.</description>
     </item>
     
     <item>
@@ -36,8 +38,8 @@ In this blog post I will review the available software for creating spectra in L
       <pubDate>Thu, 10 Aug 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/linux-sound-server/</guid>
-      <description>After we got an overview about the peculiarities of the Linux system with respect to audio and recording in the last post we will dive some more into the Linux sound system itself.
-As for most other Linux subsystems the audio one grew quite naturally too. So you have quite a number of alternatives and different ways to achieve a goal. Not just in using different software, but also in the underlying sound servers.</description>
+      <description>After we got an overview about the peculiarities of the Linux system with respect to audio and recording in the last post we will dive some more into the Linux sound system itself. If you do not understand every last bit of information in here, don&amp;rsquo;t worry.
+The Linux way of handling hardware I don&amp;rsquo;t want to go into too much detail here but instead just hook you up with the general concepts of hardware handling in Linux.</description>
     </item>
     
     <item>
@@ -46,8 +48,7 @@ As for most other Linux subsystems the audio one grew quite naturally too. So yo
       <pubDate>Sun, 06 Aug 2017 18:00:00 +0200</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/recording-audio-using-linux-systems/</guid>
-      <description>As much as I love the Linux system, its incredible amount of free and open-source software and distributions, and the whole supportive community providing awesome documentation etc., the much pain it was to migrate all my music recording and mixing from Windows to Linux. It cost me numerous sleepless nights and resulted in some quite discouraging failures during my first year of diving into open-source.
-The reason I had a hard time back then was not a lack of good documentation or badly implemented software.</description>
+      <description>The reason I had a hard time back then was not a lack of good documentation or badly implemented software. No, quite the opposite. It was the vast amount of different choices I select. Which program to use for recording, which underlying sound server, should I use a real-time kernel or not&amp;hellip; And with every choice I made several new options popped up. Don&amp;rsquo;t get me wrong, this is the true power of the Linux system and enables advanced users to surpass everything they possible could accomplish with Windows or Mac.</description>
     </item>
     
   </channel>

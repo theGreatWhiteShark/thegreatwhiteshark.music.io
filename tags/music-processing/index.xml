@@ -17,7 +17,8 @@
       <pubDate>Sun, 10 Dec 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/music-processing/spectral-analysis-impact-of-the-amp/</guid>
-      <description>One of the most important tools in digital signal processing, if not THE most important one, is the spectral analysis. In this post I discuss what it might unveil about the recording procedure. Should I just use the line-out of my amp? Or better a microphone picking up the signal of the amp? Well, which microphone then? An old friend always told me a good sound has to travel through air at least once.</description>
+      <description>Of course I won&amp;rsquo;t provide conclusive answers to those questions. In truth, this is just my first, humble attempt to grow accustom to my equipment and its peculiarities and frequency responses. But one purpose of this blog is to document my projects and the bottom line of all of this is of course: it&amp;rsquo;s fun to dig into your music and audio signals using your computer. :)
+Equipment and software I will use the software presented in my last post on spectral analysis.</description>
     </item>
     
     <item>
@@ -26,8 +27,9 @@
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/</guid>
-      <description>A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Audacity already can handle it. So let&amp;rsquo;s use it with Non Timeline or a general JACK-based environment too.
-In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them. I will not write about the Fourier transform and spectra in general.</description>
+      <description>As a disclaimer: I will not write about the Fourier transform and spectra in general. For a very nice and gentle introduction I can recommend the second chapter of Fundamentals of Music Processing by Meinard Müller.
+Setup As a prerequisite I assume you have the Non DAW Suite installed and JACK configured on your system. Now, power up JACK (e.g. via QjackCtl) and open Non Timeline.
+For the sake of reproducibility I will use a gong sample provided by freewavesamples.</description>
     </item>
     
   </channel>

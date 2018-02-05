@@ -17,8 +17,7 @@
       <pubDate>Mon, 29 Jan 2018 20:02:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/di-or-not-di/</guid>
-      <description> Work in progress&amp;hellip;
-Benefit Are their any losses?  Split signal in DI + send use DI signal as amp input and record send using the same configuration  </description>
+      <description> Benefit Are their any losses?  Split signal in DI + send use DI signal as amp input and record send using the same configuration  </description>
     </item>
     
     <item>
@@ -27,8 +26,9 @@ Benefit Are their any losses?  Split signal in DI + send use DI signal as amp in
       <pubDate>Sun, 03 Dec 2017 18:00:00 +0100</pubDate>
       
       <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/</guid>
-      <description>A very important part of digital signal processing (DSP) as well as music processing is to analyze the spectrum and the spectrogram of your recording. Even Audacity already can handle it. So let&amp;rsquo;s use it with Non Timeline or a general JACK-based environment too.
-In this blog post I will review the available software for creating spectra in Linux systems and how to deploy them. I will not write about the Fourier transform and spectra in general.</description>
+      <description>As a disclaimer: I will not write about the Fourier transform and spectra in general. For a very nice and gentle introduction I can recommend the second chapter of Fundamentals of Music Processing by Meinard Müller.
+Setup As a prerequisite I assume you have the Non DAW Suite installed and JACK configured on your system. Now, power up JACK (e.g. via QjackCtl) and open Non Timeline.
+For the sake of reproducibility I will use a gong sample provided by freewavesamples.</description>
     </item>
     
   </channel>
