@@ -30,13 +30,17 @@
 	<article class="post {{ .Section }}">
 
 	  <header class="post-header">
-	    <h1 class="post-title">{{.Title}}</h1>
+	    <h1 class="post-title">
+	      {{.Title | markdownify | emojify }}
+	    </h1>
 	    {{if .Params.subtitle}}
-	      <h3 class="post-subtitle">{{.Params.subtitle}}</h3>
+	    <h3 class="post-subtitle">
+	      {{.Params.subtitle | markdownify | emojify }}
+	    </h3>
 	    {{end}}
 	    <hr class="post-description-separator"/>
 	    <section class="post-description-single">  
-	      <p>{{.Description | markdownify}}
+	      <p>{{.Description | markdownify | emojify }}
 	    </section>
 	    <hr class="post-description-separator"/>
             <section class="post-meta">
@@ -52,7 +56,7 @@
 	  </header>
 
 	  <section class="post-content">
-	    {{ .Content }}
+	    {{ .Content | markdownify | emojify }}
 	  </section>
 
 
