@@ -10,17 +10,21 @@ $color-subtitle-read-next: #ccc;
   h1 {
     font-size: 4.5rem;
   }
-  p {
-    a {
-      color: $link-color;
-      text-decoration: unset;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+  a {
+    color: $link-color;
+    text-decoration: unset;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
+// No blue link highlighting for the tags of a post.
+.post-meta {
+  a {
+    color: $color-subtitle !important;
+  }
+}
 .content .post-header {
   // The first two are used in the single pages
   h1 {

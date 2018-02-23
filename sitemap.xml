@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/moving-to-github/</loc>
+    <lastmod>2018-02-23T22:27:35+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/di-or-not-di/</loc>
     <lastmod>2018-01-29T20:02:00+01:00</lastmod>
   </url>
@@ -94,6 +99,12 @@
   </url>
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/post/</loc>
+    <lastmod>2018-02-23T22:27:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/recording/</loc>
     <lastmod>2018-01-29T20:02:00+01:00</lastmod>
     <priority>0</priority>
@@ -119,7 +130,7 @@
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/</loc>
-    <lastmod>2018-01-29T20:02:00+01:00</lastmod>
+    <lastmod>2018-02-23T22:27:35+01:00</lastmod>
     <priority>0</priority>
   </url>
   

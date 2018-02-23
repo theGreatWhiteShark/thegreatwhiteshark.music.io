@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on theGreatWhiteShark</title>
+    <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/post/</link>
+    <description>Recent content in Post on theGreatWhiteShark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Feb 2018 22:27:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moving from Wordpress to Github Pages&#43;Hugo</title>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/moving-to-github/</link>
+      <pubDate>Fri, 23 Feb 2018 22:27:35 +0100</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/moving-to-github/</guid>
+      <description>I moved my blog from Wordpress to Github Pages.
+In addition, I also decided to split the blog in three different parts. Art, coding, and music are just a little too diverse and I intend to do further posts in all of these subjects.
+You can find the blogs via the following links
+ music blog coding blog overall blog  Motivation First of all, I have to say: I had a nice time on Wordpress and it was a great place to start my blog.</description>
+    </item>
+    
+  </channel>
+</rss>
