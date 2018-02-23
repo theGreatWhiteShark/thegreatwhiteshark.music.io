@@ -2,13 +2,17 @@
   font-size: 4.5rem;
 }
 
-.post p a {
+.post a {
   color: #0366d6;
   text-decoration: unset;
 }
 
-.post p a:hover {
+.post a:hover {
   text-decoration: underline;
+}
+
+.post-meta a {
+  color: #444!important;
 }
 
 .content .post-header h1 {
