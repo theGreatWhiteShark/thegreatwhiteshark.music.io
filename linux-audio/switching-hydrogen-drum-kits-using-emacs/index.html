@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Switching Hydrogen drum kits using Emacs"/>
+<meta name="twitter:description" content="If you ever used Hydrogen, you might know the following problem: you want to switch to a different drum kit but it has a different layout and all the activations of the instruments are off. I wrote some Emacs functions to ease the pain of changing all the activations and to do it without excessively clicking in the Hydrogen GUI."/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Switching Hydrogen drum kits using Emacs" />
+  	<meta property="og:site_name" content="theGreatWhiteShark" />
+  	<meta property="og:url" content="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/" />
+
+    
+        
+            <meta property="og:image" content="/thegreatwhiteshark.music.io/images/non-banner.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="If you ever used Hydrogen, you might know the following problem: you want to switch to a different drum kit but it has a different layout and all the activations of the instruments are off. I wrote some Emacs functions to ease the pain of changing all the activations and to do it without excessively clicking in the Hydrogen GUI." />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2018-02-25T14:23:41&#43;01:00" />
+
+    
+    <meta property="article:tag" content="Linux" />
+    
+    <meta property="article:tag" content="Emacs" />
+    
+    <meta property="article:tag" content="Hydrogen" />
+    
+    
+
+    <title>Switching Hydrogen drum kits using Emacs</title>
+
+    
+    <meta name="description" content="If you ever used Hydrogen, you might know the following problem: you want to switch to a different drum kit but it has a different layout and all the activations of the instruments are off. I wrote some Emacs functions to ease the pain of changing all the activations and to do it without excessively clicking in the Hydrogen GUI." />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/thegreatwhiteshark.music.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/thegreatwhiteshark.music.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/thegreatwhiteshark.music.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/thegreatwhiteshark.music.io/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/thegreatwhiteshark.music.io/css/custom.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/thegreatwhiteshark.music.io/index.xml" rel="alternate" type="application/rss+xml" title="theGreatWhiteShark" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.32.2" />
+
+    <link rel="canonical" href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://thegreatwhiteshark.github.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": Switching Hydrogen drum kits using Emacs,
+    "name": Switching Hydrogen drum kits using Emacs,
+    "wordCount": 588,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/,
+    "datePublished": 2018-02-25T14:23Z,
+    "dateModified": 2018-02-25T14:23Z,
+    
+    "keywords": Linux, Emacs, Hydrogen,
+    "description": If you ever used Hydrogen, you might know the following problem: you want to switch to a different drum kit but it has a different layout and all the activations of the instruments are off. I wrote some Emacs functions to ease the pain of changing all the activations and to do it without excessively clicking in the Hydrogen GUI.,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/thegreatwhiteshark.music.io/">Home</a>
+            </li>
+        
+            <h3>Topics</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="/thegreatwhiteshark.music.io/linux-audio">Linux audio</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/thegreatwhiteshark.music.io/music-processing">Music processing</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/thegreatwhiteshark.music.io/recording">Recording</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/theGreatWhiteShark">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://thegreatwhiteshark.github.io/">Blogs</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/thegreatwhiteshark.music.io/about">About me</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/thegreatwhiteshark.music.io/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+      <header class="main-header post-head no-cover">
+	<nav class="main-nav clearfix">
+	  
+
+	  
+	  
+	  <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+	  
+	</nav>
+      </header>
+
+
+
+      <main class="content" role="main">
+
+	<article class="post linux-audio">
+
+	  <header class="post-header">
+	    <h1 class="post-title">
+	      Switching Hydrogen drum kits using Emacs
+	    </h1>
+	    
+	    <hr class="post-description-separator"/>
+	    <section class="post-description-single">  
+	      <p>If you ever used Hydrogen, you might know the following problem: you want to switch to a different drum kit but it has a different layout and all the activations of the instruments are off. I wrote some Emacs functions to ease the pain of changing all the activations and to do it without excessively clicking in the Hydrogen GUI.
+	    </section>
+	    <hr class="post-description-separator"/>
+            <section class="post-meta">
+              
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io//tags/linux/">#Linux</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io//tags/emacs/">#Emacs</a></span>
+              
+              <span class="post-tag small"><a href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io//tags/hydrogen/">#Hydrogen</a></span>
+              
+            </section>
+	  </header>
+
+	  <section class="post-content">
+	    <p>As much as I like the
+<a href="https://github.com/hydrogen-music/hydrogen">Hydrogen</a> drum machine,
+there are some details, which are quite annoying. One of those things
+is that you do not have a set commands, which help you to migrate from
+one drum kit to another.</p>
+
+<p>The usual scenario is the following. You programmed a song and are
+curious how it would sound using a different drum kit. But just
+loading another one doesn&rsquo;t work in many cases. Since the drum kits
+inserted their instruments in different orders, you are bound to
+either adjust all the activations by hand or to change the drum kit
+itself. Both ways are not nice. That&rsquo;s why I wrote some functions for
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> that help you with the
+migration.</p>
+
+<h1 id="the-emacs-functions">The Emacs functions</h1>
+
+<p>You might wonder why someone would want to write a function in
+<a href="https://en.wikipedia.org/wiki/Emacs_Lisp">Elisp</a> just to change some
+text in a Hydrogen song file. There are more accessible programming
+languages concerning string handling out there, like e.g. awk or
+perl. True. But in the end we want to edit a single file and we don&rsquo;t
+want to introduce any artifacts. So it feel most natural, at least for
+me, to do all the altering within an editor. This way, we can visually
+check all the changes and might do some adjustments.</p>
+
+<p>The two functions I wrote, <strong>hydrogen-swap-instrument</strong> and
+<strong>hydrogen-replace-instrument</strong>, can be found on
+<a href="https://github.com/theGreatWhiteShark/configurations-and-scripts/blob/master/emacs/elisp/hydrogen.el">Github</a>. Both
+functions ask you via a prompt which instrument you want to replace
+and what do you want to replace it with.</p>
+
+<p>By <strong>replacing an instrument</strong> I mean <em>changing the instrument
+number for a specific activation</em>. If the snare drum in your previous
+drum kit did reside at the 4th position and your new drum kit placed
+it on the 3rd, you have to replace the instrument number of all the
+activations of the snare drum by the new value. But be careful,
+<strong>counting the instrument numbers starts at 0</strong>!</p>
+
+<p><strong>hydrogen-replace-instrument</strong> does what the function name is
+hinting. It simply replaces an instrument number by another one. But
+this might produce some artifacts. Imagine you replaced the instrument
+in your snare drum activations by 3 and later on you realized there
+already was an instrument at position 3 with activations present. So
+you mixed up both.</p>
+
+<p>In order to avoid such inconvenience, I also introduced the function
+<strong>hydrogen-swap-instrument</strong>. It swaps the number of the
+instruments for the activation of your snare drum with those of the
+instrument 3. If no instrument was present at the third position, it
+performs an ordinary replacement.</p>
+
+<p>Both functions act on the whole buffer unless they are called after
+marking a region.</p>
+
+<h1 id="example">Example</h1>
+
+<p>Since the intersection between people using Hydrogen and people using
+Emacs might not be that huge, I will provide a basic introduction of
+how to use these functions.</p>
+
+<p>First of all, you need to add the following lines to your
+<strong>$HOME/.emacs</strong> Emacs configuration file so Emacs can find the
+functions. The <em>PATH-TO-YOUR-COPY-OF</em> has to be replace by the full
+path to the folder containing the <em>hydrogen.el</em> file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cl" data-lang="cl">(load <span style="color:#e6db74">&#34;PATH-TO-YOUR-COPY-OF/hydrogen.el&#34;</span>)</code></pre></div>
+<p>Now,</p>
+
+<ol>
+<li>Open an Emacs instance.</li>
+<li>Open the Hydrogen song file by pressing <strong>C-x C-f</strong> (Ctrl+x
+followed by Ctrl+f) and enter the path to the song file.</li>
+<li>Press <strong>M-x</strong> (Alt-x) and enter the name of one of the two
+functions, e.g hydrogen-swap-instrument.</li>
+<li>Enter the number of the instrument you want to replace</li>
+<li>Press return</li>
+<li>Enter the target number of the instrument</li>
+<li>Press return</li>
+</ol>
+
+<p>This is it. Just do it for all the different instruments and you are
+done. Way better than changing the activations by hand.</p>
+
+	  </section>
+
+
+	  <footer class="post-footer">
+
+
+	    
+
+
+
+
+	    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Switching%20Hydrogen%20drum%20kits%20using%20Emacs&nbsp;-&nbsp;theGreatWhiteShark&amp;url=https%3a%2f%2fthegreatwhiteshark.github.io%2fthegreatwhiteshark.music.io%2flinux-audio%2fswitching-hydrogen-drum-kits-using-emacs%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fthegreatwhiteshark.github.io%2fthegreatwhiteshark.music.io%2flinux-audio%2fswitching-hydrogen-drum-kits-using-emacs%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fthegreatwhiteshark.github.io%2fthegreatwhiteshark.music.io%2flinux-audio%2fswitching-hydrogen-drum-kits-using-emacs%2f&amp;description=Switching%20Hydrogen%20drum%20kits%20using%20Emacs"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fthegreatwhiteshark.github.io%2fthegreatwhiteshark.music.io%2flinux-audio%2fswitching-hydrogen-drum-kits-using-emacs%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+	    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/thegreatwhiteshark.github.io\/thegreatwhiteshark.music.io\/linux-audio\/switching-hydrogen-drum-kits-using-emacs\/";  
+this.page.identifier = "https:\/\/thegreatwhiteshark.github.io\/thegreatwhiteshark.music.io\/linux-audio\/switching-hydrogen-drum-kits-using-emacs\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://thegreatwhiteshark-music-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+	  </footer>
+	</article>
+
+      </main>
+
+      
+      <aside class="read-next">
+  
+  
+  <a class="read-next-story prev" style="no-cover" href="/thegreatwhiteshark.music.io/linux-audio/spectral-analysis-linux/">
+    <section class="post">
+      <h2>Spectral analysis</h2>
+      
+        <h4>Real-time spectral analysis in Linux using JACK</h4>
+      
+    </section>
+  </a>
+  
+</aside>
+
+      
+
+          <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">theGreatWhiteShark</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/thegreatwhiteshark.music.io/js/jquery.js"></script>
+    <script type="text/javascript" src="/thegreatwhiteshark.music.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/thegreatwhiteshark.music.io/js/index.js"></script>
+    
+</body>
+</html>
+

@@ -6,10 +6,20 @@
     <description>Recent content in Linux on theGreatWhiteShark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Dec 2017 18:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2018 14:23:41 +0100</lastBuildDate>
     
 	<atom:link href="https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switching Hydrogen drum kits using Emacs</title>
+      <link>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/</link>
+      <pubDate>Sun, 25 Feb 2018 14:23:41 +0100</pubDate>
+      
+      <guid>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/</guid>
+      <description>As much as I like the Hydrogen drum machine, there are some details, which are quite annoying. One of those things is that you do not have a set commands, which help you to migrate from one drum kit to another.
+The usual scenario is the following. You programmed a song and are curious how it would sound using a different drum kit. But just loading another one doesn&amp;rsquo;t work in many cases.</description>
+    </item>
     
     <item>
       <title>Spectral analysis</title>

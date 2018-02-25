@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/switching-hydrogen-drum-kits-using-emacs/</loc>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/moving-to-github/</loc>
     <lastmod>2018-02-23T22:27:35+01:00</lastmod>
   </url>
@@ -63,20 +68,32 @@
   </url>
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emacs/</loc>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/emulation/</loc>
     <lastmod>2017-11-26T18:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/hydrogen/</loc>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/linux/</loc>
-    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/linux-audio/</loc>
-    <lastmod>2017-12-03T18:00:00+01:00</lastmod>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -124,13 +141,13 @@
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/tags/</loc>
-    <lastmod>2017-11-26T18:00:00+01:00</lastmod>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://thegreatwhiteshark.github.io/thegreatwhiteshark.music.io/</loc>
-    <lastmod>2018-02-23T22:27:35+01:00</lastmod>
+    <lastmod>2018-02-25T14:23:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
