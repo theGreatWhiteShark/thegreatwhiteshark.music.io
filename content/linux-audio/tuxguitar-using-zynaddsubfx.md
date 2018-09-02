@@ -44,7 +44,7 @@ playback of your system.
 
 # Notes
 
-I'm still using version 2.4.3 of ZynAddSubFX. So no need for the new
+I'm still using version 2.4.3 of ZynAddSubFX. So, no need for the new
 and improved interface. But if you like this project and use it quite
 frequently, be sure to thank its developers appropriately. ;)
 
@@ -57,3 +57,13 @@ Tired of setting up the whole thing every time you want to use
 TuxGuitar? Then usethe [Non Session
 Manager](http://non.tuxfamily.org/wiki/Non%20Session%20Manager) to do
 it with a single click. 
+
+--- 
+
+# Update 02.09.2018
+
+As an alternative you can use my
+[tux2zyn](https://github.com/theGreatWhiteShark/tux2zyn) package. It
+is basically a Lua scripts adjusting the configuration files of
+TuxGuitar and ZynAddSubFX, starting up both applications, and wires
+them properly using the API of the Jack server.
