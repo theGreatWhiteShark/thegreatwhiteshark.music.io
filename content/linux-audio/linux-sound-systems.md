@@ -158,17 +158,18 @@ guide as well as the
 
 # The JACK sound server
 
-The [Jack](http://jackaudio.org/) sound server is the one of choice
-whenever you intend to establish a more sophisticated 
-workflow. It handles the access of the sound card via
+[Jack](http://jackaudio.org/) is the sound server of choice if you
+want to establish a more sophisticated workflow or intend to do some
+professional audio recording or production in Linux. It handles the
+access of the sound card via
 [callbacks](https://en.wikipedia.org/wiki/Callback_(computer_programming)),
 what not just reduces the overall latency significantly but also
 ensures that all the different programs in your effect chain will be
-called in order and are synchronized. So you can e.g. set your
-recording application as time master and your drum sequencer as
-slave. This way you will have a drum playback whenever you start
-your recording session without integrating it into the recording
-program itself. 
+called in order and are synchronized. By connecting both your
+recording application and your drum sequencer as clients to the JACK
+servers, they will be perfectly synchronized and you will have a drum
+playback whenever you start your recording session without integrating
+it into the recording program itself.
 
 One of the most convenient ways to [configure
 JACK](http://libremusicproduction.com/articles/demystifying-jack-%E2%80%93-beginners-guide-getting-started-jack)
@@ -182,19 +183,78 @@ wiki](https://github.com/jackaudio/jackaudio.github.com/wiki) or
 [ArchLinux's
 take](https://wiki.archlinux.org/index.php/JACK_Audio_Connection_Kit). 
 
-A running JACK server does not necessarily return any audio. It
-instead serves as a convenience layer within your system all programs
+A running JACK server does not necessarily return any audio. It,
+instead, serves as a convenience layer within your system all programs
 can both sent audio to and receive specific audio from. In other
 words: you can pipe the output of an arbitrary
 [JACK-aware](http://jackaudio.org/applications/) application into
 another one. To establish those connections (between programs as well
-as to the system's sink and source) you can either use the connection
-manager of QJackCtl or an external one like
+as to the system's sink and source), you can either use the connection
+manager of QJackCtl or an external one, like
 [Patchage](http://drobilla.net/software/patchage). Worth mentioning in
 the context of the graphical configuration and controlling of you JACK
 server are also [JackEQ](http://djcj.org/jackeq/), [JACK
 Rack](http://jack-rack.sourceforge.net/), and the [Non Session
 Manager](http://non.tuxfamily.org/session-manager/doc/MANUAL.html). 
+
+When configuring JACK you will face a number terms, which, at least
+for me, are quite confusing in the beginning, like buffersize,
+bufferrate, frames, periods, latency, or samplerate. Let me shed some
+light on them and their connections.
+
+Let's illustrate them on an example. Imagine you are recording some
+audio, which enters your computer via a sound card in a
+particular way; microphone, line out, it doesn't matter. In your
+computer you pipe the signal coming from the sound card into a chain of
+connected JACK client, and, finally, the signal will be sent to your
+sound card again in order to hear the results. The moment the audio
+signal enters your computer it has to be converted from its analog
+representation, a physical wave front or oscillation in the air
+pressure, into a digital one containing only zeros and ones. This will
+be done by sampling the signal using a specific **samplerate**
+(**-r** or **--rate** option). With a typical samplerate of 48000Hz
+the wave front will be measured 48000 times per second and each time
+its deflection will be stored on disk as a float number. Increasing
+the samplerate will therefore increase the number of floats used to
+approximate the analog signal and thus improves its digital
+representation. A single number written out during the measurement
+will be called a **frame**. Thus, with a samplerate of 48000Hz the
+audio device will get 48000 new frames of audio data per second. 
+
+Ideally, we would now pipe each frame through the chain of JACK
+clients and write the new numbers representing the output signal to
+the output port of our sound card. But this would be way too expensive
+in terms of CPU time and usage. Instead, we accumulate a number of
+frames in a **buffer** and provide it to the JACK clients so they can
+perform their operations on all frames in the buffer at once. This is
+way more efficient, but the signal will need more time to travel
+through the computer because of the accumulation process. So, we have
+to find a certain number of frames, the so-called **buffersize** or
+**period** (**-p** or **--period** option), that is a good trade-off
+between CPU usage and the waiting time. Unfortunately, there is no
+magical number working with all computers and/or sound cards. If your
+sound card supports hardware playback, you can set the buffersize to
+1024, loose the realtime capabilities, but get a smooth signal
+instead. Otherwise, you have to gradually decrease the number in powers
+of two to find a setting that just does not produce audio glitches,
+so-called **xruns**, yet.
+
+The amount of time the signal spends after its digitization until the
+end of JACK process chain is the **input latency**, which is
+calculated by the buffersize divided by the samplerate and given in
+seconds. The more frames we will combine into one buffer, the longer
+we have to wait for our signal. The more frames we sample per
+seconds, the faster the signal will reach the end of the chain for a
+fixed buffersize. But this is not the whole story yet. Since
+converting the digital signal back to an analog one does require some
+more time, not every buffer will be written out to the
+sound card. Instead, a number of buffers **n** (**-n** or
+**--nperiods** option) will be collected and all of them will then be
+handed to the sound card at once. With a usual setting of n=2 the
+**output latency**, which is calculated by the buffersize times n
+divided by the samplerate, will be twice as big as the input one. And
+since this is the time you spend waiting for your signal to reach the
+speakers, it's most probably the latency you care most about.
 
 # The interplay between PulseAudio and JACK
 
@@ -225,6 +285,9 @@ Hint: the configuration file for *jackd* is located in *~/.jackdrc*
 and the corresponding one for *jackdbus* in
 *~/.config/jack/conf.xml*. 
 
+---
 
+Update (13.11.2018): Explaining the basic terms and parameters of the
+JACK server.
 
 
