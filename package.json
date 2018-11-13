@@ -11,12 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.10.0",
-    "gulp-concat-css": "^2.3.0",
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^4.0.2",
+    "natives": "^1.1.6",
+    "node-sass": "^4.10.0"
   },
   "dependencies": {
-    "hoek": "^5.0.4"
+    "npm": "^6.4.1"
   }
 }

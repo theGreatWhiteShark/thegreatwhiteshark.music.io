@@ -40,7 +40,7 @@ incredible fast.
 npm install
 
 # translate the custom.scss to .css once
-gulp scss
+gulp sass
 
 # watch for changes and translate the custom.scss
 gulp watch
