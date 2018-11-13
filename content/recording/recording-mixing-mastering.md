@@ -1,5 +1,6 @@
 +++
 comment = true
+draft = false
 date = "2018-04-08T13:05:36+01:00"
 tags = ["recording", "mixing", "mastering"]
 title = "A layman's guide to music production"
