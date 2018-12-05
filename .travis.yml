@@ -17,9 +17,9 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_af96bdea4621_key -iv $encrypted_af96bdea4621_iv
   -in travis_key.enc -out travis_key -d
 - git clone --branch v2 https://github.com/go-yaml/yaml $GOPATH/src/gopkg.in/yaml.v2
-- wget https://github.com/gohugoio/hugo/releases/download/v0.32.2/hugo_0.32.2_Linux-64bit.deb
-- sudo dpkg -i hugo_0.32.2_Linux-64bit.deb
-- rm hugo_0.32.2_Linux-64bit.deb
+- wget https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
+- sudo dpkg -i hugo_0.52_Linux-64bit.deb
+- rm hugo_0.52_Linux-64bit.deb
 install: true
 script:
 - git submodule update --init --remote --recursive
