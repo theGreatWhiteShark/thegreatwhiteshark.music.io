@@ -9,13 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "npm": "^6.10.3"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "natives": "^1.1.6",
-    "node-sass": "^4.10.0"
-  },
-  "dependencies": {
-    "npm": "^6.4.1"
+    "node-sass": "^4.12.0"
   }
 }
