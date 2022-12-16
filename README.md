@@ -17,7 +17,7 @@ clone it including all of its submodules.
 ``` bash
 git clone https://github.com/theGreatWhiteShark/thegreatwhiteshark.music.io.git
 cd thegreatwhiteshark.music.io
-git submodule update --init --remote --recursive
+git submodule update --init --recursive
 ```
 
 You can now serve the blog by running Hugo as a server from the
@@ -29,21 +29,14 @@ hugo server
 
 In order to write your own customization the
 **/static/css/scss/custom.scss** file of the package, you first have
-to install [gulp.js](https://gulpjs.com/). It will watch the .scss
-file for changes and translate it to a .css, which is imported by
-Hugo. Since the latter is also building the website anew every time
-one of the served files changes, this makes modifying your blog
-incredible fast.
+`node-sass`. It will translate the .scss file into a .css one, which
+is imported by Hugo. Since the latter is also building the website
+anew every time one of the served files changes, this makes modifying
+your blog incredible fast.
 
 ``` bash
-# install gulp
 npm install
-
-# translate the custom.scss to .css once
-gulp sass
-
-# watch for changes and translate the custom.scss
-gulp watch
+npm run build
 ```
 
 # Customization

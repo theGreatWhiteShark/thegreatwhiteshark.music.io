@@ -1,21 +1,16 @@
 {
-  "name": "osprey",
-  "version": "1.0.0",
-  "description": "![Logo](https://github.com/tomanistor/osprey/blob/master/images/osprey-logo.png)",
-  "main": "gulpfile.js",
+  "name": "theGreatWhiteShark.music",
+  "version": "1.0.1",
+  "description": "Music part of the blog",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -f static/css/custom.css",
+    "build": "npm run clean && npx node-sass src/scss/custom.scss static/css/custom.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "theGreatWhiteShark",
   "license": "ISC",
   "dependencies": {
-    "npm": "^6.10.3"
+    "node-sass": "^8.0.0"
   },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "natives": "^1.1.6",
-    "node-sass": "^4.12.0"
-  }
+  "devDependencies": {}
 }
